@@ -7,6 +7,7 @@
 	<title></title> 
 	
 	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/modules.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
@@ -82,7 +83,55 @@
 	</section><!--left content-->
 	
 	<aside id="right-content">
-		col droite
+
+		<!-- BLOC AGENDA -->
+		<section class="bloc-agenda">
+			<h1>Agenda financier</h1>
+			<ul>
+				<li>
+					<a href="#">
+						<span class="bloc-agenda-date">21 Juin 2014</span>
+						<span class="bloc-agenda-event">Assemblée générale des actionnaires</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="bloc-agenda-date">21 Juin 2014</span>
+						<span class="bloc-agenda-event">Assemblée générale des actionnaires</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="bloc-agenda-date">21 Juin 2014</span>
+						<span class="bloc-agenda-event">Assemblée générale des actionnaires</span>
+					</a>
+				</li>
+			</ul>
+			<a href="#" class="bloc-agenda-button">Voir l'agenda complet</a>
+		</section>
+		<!-- FIN BLOC AGENDA -->
+
+		<!-- BLOC CENTRES -->
+		<section class="bloc-centres">
+			<h1>Nos centres commerciaux</h1>
+			<figure>
+				<img id="map-mercialys" src="images/map.jpg" width="266" height="282" alt="Centres commerciaux Mercialys">
+				<figcaption>
+					<img src="images/map-legend.png" width="148" height="21" usemap="#mercialysMap" alt="Localisation centres commerciaux Mercialys">
+					<map name="mercialysMap" id="mercialysMap">
+						<area id="map-red" shape="rect" coords="0,0,15,21" href="#" />
+						<area id="map-green" shape="rect" coords="33,0,48,21" href="#" />
+						<area id="map-yellow" shape="rect" coords="67,0,82,21" href="#" />
+						<area id="map-black" shape="rect" coords="100,0,115,21" href="#" />
+						<area id="map-grey" shape="rect" coords="133,0,148,21" href="#" />
+					</map>
+					<div id="map-mercialys-pointer"></div>
+					<span id="map-mercialys-title">Grand centre commercial</span>
+				</figcaption>
+			</figure>
+		</section>
+		<!-- FIN BLOC CENTRES -->
+
 	</aside><!--fin right content-->
 </section><!--fin content-->
 
