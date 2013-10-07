@@ -1,0 +1,40 @@
+/*------------------------------RAZ------------------------------*/
+*{margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0; padding: 0;font-weight: normal;}
+ul{margin: 0; padding: 0; list-style: none;}
+a{outline: none; color: #000; text-decoration:none;}
+a img{border:none;}
+:focus{-moz-outline-style: none;}
+fieldset{border:none; margin: 0; padding: 0;}
+input{vertical-align: middle; color:#000; font-family: arial; font-size:13px;}
+textarea{color:#000; font-family:arial; font-size:13px;}
+header, footer, section, aside, nav, article, figure, hgroup{display:block;}
+
+
+/*----------------------------COMMUN------------------------------*/
+.clear{clear:both; display:block; line-height:1px; font-size:1px; height:1px;}
+.clearfix{*zoom: 1;}
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+*, *:before, *:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.none{display:none;}
+.left{float:left;}
+.right{float:right;}
+.center{width:940px; margin:0 auto; position:relative;}
+
+.content h1{font-family: 'Neuton', georgia; font-size:36px; line-height:36px; margin-bottom:25px;}
+.content h2{font-family: 'Neuton', georgia; font-size:26px; line-height:36px; margin-bottom:25px;}
+
+/*------------------------------structure générale------------------------------*/
+body{font-size: 14px; font-family:'Open Sans', arial; color:1262219; background:#f6f6f6;}
+
+
+#ariane{margin-bottom:3px;}
+#ariane ul li{display:inline; color:#8e8c87; font-size:11px;}
+#ariane ul li a{display:inline; color:#8e8c87; text-decoration:underline;}
+#ariane ul li span{color:#262219;}
+/*-----------------2 col---------------*/
+#left-content{width:601px; float:left; height:200px;}
+#right-content{width:300px; float:right; height:200px;}
+
+.big-figure{margin-bottom:18px;}
+.big-figure img{display:block;}
