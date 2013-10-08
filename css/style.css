@@ -1,0 +1,113 @@
+/*--------------------------------------HOME------------------------------------*/
+
+.top-home{background:url(../images/bg-bois-bottom.jpg) left bottom repeat-x; padding:25px 0 76px 0;}
+.middle-home{padding:25px 0 37px 0;}
+.bottom-home{left top repeat-x; padding:100px 0 39px 0; background:url(../images/bg-bois-top.jpg) repeat-x 0 20px;}
+.multiplebgs .bottom-home{background:url(../images/bg-pola.png) no-repeat center 0, url(../images/bg-bois-top.jpg) repeat-x 0 20px}
+
+/*-------MODULE FINANCIER------*/
+.financier .bloc-financier{float:left; width:313px;}
+.financier .content-financier{height:363px; background:#fff; position:relative;}
+.financier .link-financier{height:65px; line-height:65px; text-align:center; font-size:12px; display:block; text-transform:uppercase;}
+
+/*-BOURSE-*/
+.financier .bourse{width:314px;}
+.financier .bourse .content-financier{padding:40px 32px 0 32px;}
+.financier .bourse .valeur{font-size:36px; font-weight:bold; float:left; line-height:36px;}
+.financier .bourse .percent{float:right; font-size:18px; color:#b7d00d; line-height:36px;}
+.financier .bourse .info{margin-top:16px; font-size:13px;}
+.financier .bourse .graphique{margin-top:53px;}
+.financier .bourse .link-financier{background:#c9e40d;}
+.financier .bourse .cursor{background:url(../images/cursor-white.png) no-repeat; position:absolute; top:-8px; left:19px; width:16px; height:8px;}
+/*-RAPPORT-*/
+.financier .rapport li{height:121px; padding:34px 19px 0 19px; position:relative;}
+.financier .rapport li h4{font-weight:bold; min-height:50px; line-height:18px;}
+.financier li.gris{background:#f2f2f2;}
+.financier .rapport li a.link{font-size:11px; text-transform:uppercase; background:url(../images/bg-dl.png) no-repeat; padding:0 0 0 27px;}
+.financier .rapport .link-financier{background:#b7d00d;}
+.financier .rapport .cursor{background:url(../images/cursor-gris.png) no-repeat; position:absolute; top:-8px; left:19px; width:16px; height:8px;}
+/*-AGENDA-*/
+.financier .agenda li{height:121px; padding:30px 14px 0 95px; position:relative;}
+.financier .agenda li h4{font-weight:bold; min-height:42px; line-height:18px;}
+.financier .agenda li .date{position:absolute; left:30px; top:33px; width:48px; height:54px; background:#b7d00d;}
+.financier .agenda li .date .day{font-size:24px; line-height:24px; font-weight:bold; width:100%; text-align:center; position:absolute; top:7px; left:0;}
+.financier .agenda li .date .month{font-size:14px; line-height:14px; font-weight:bold; width:100%; text-transform:uppercase; position:absolute; top:31px; left:0; text-align:center;}
+.financier .agenda li a.link{font-size:11px; text-transform:uppercase; background:url(../images/bg-link-agenda.png) no-repeat; padding:0 0 0 27px;}
+.financier .agenda .link-financier{background:#a6bc0d;}
+.financier .agenda .cursor{background:url(../images/cursor-white.png) no-repeat; position:absolute; top:-8px; left:19px; width:16px; height:8px;}
+
+
+/*------MODULE PROJET HOME--------*/
+.projet-home {}
+.projet-home li .bloc-link{display:block; width:313px; height:255px; position:relative; overflow:hidden;}
+.projet-home li .content-proj{position:absolute; width:313px; height:255px; position:absolute; top:197px; left:0;}
+.projet-home li .content-proj h4{height:58px; display:table; width:100%; font-weight:bold;}
+.projet-home li.proj-1 .content-proj h4{background:#c9e40d;}
+.projet-home li.proj-2 .content-proj h4{background:#b7d00d;}
+.projet-home li.proj-3 .content-proj h4{background:#a6bc0d;}
+.projet-home li .content-proj h4 span{display:table-cell; vertical-align:middle; width:100%; padding:0 0 0 33px; text-transform:uppercase; font-size:12px;}
+.projet-home li {float:left;}
+.projet-home li .content-proj .my-content-proj{background:url(../images/bg-overlay.png); width:100%; height:197px; color:#fff; padding:60px 0 0 0; opacity:0;}
+.projet-home li .content-proj .my-content-proj p{padding:0 30px; font-size:13px;}
+
+/*------MODULE ACTU HOME------------*/
+/*slider*/
+.actu-home .actu{width:620px; float:left;}
+.actu-home .actu .slide-actu{width:620px; height:325px; overflow:hidden; background:#18120c; color:#fff; font-size:13px; position:relative;}
+.actu-home .actu .move-slide-actu{width:10000px; position:absolute;}
+.actu-home .actu .slide-actu-home{float:left; width:620px; padding:47px 0 0 49px;}
+.actu-home .slide-actu-home .figure{width:235px; float:left;}
+.actu-home .slide-actu-home .figure img{display:block; width:235px;}
+.actu-home .slide-actu-home .text-slide-actu{float:left; padding:0 0 0 35px; width:300px;}
+.actu-home .text-slide-actu h4{color:#b7d00d; font-size:17px; line-height:21px; margin-bottom:16px;}
+.actu-home .text-slide-actu .link-parag{font-size:13px; text-decoration:underline; color:#b7d00d;}
+.actu-home .dl-link{margin-top:29px;}
+.actu-home .dl-link a{color:#fff; text-decoration:underline; background:url(../images/link-dl-white.png) left center no-repeat; font-size:11px; text-transform:uppercase; padding-left:26px;}
+.actu-home .bottom-slide-home{background:#a6bc0d; height:77px; position:relative;}
+.actu-home .bottom-slide-home a{display:block; height:77px; width:466px; background:#b7d00d; margin:0 auto; line-height:77px; text-transform:uppercase; font-size:12px; text-align:center;}
+.actu-home .btn-move{position:absolute; top:0; width:77px; height:77px; text-indent:-5000px; cursor:pointer;}
+.actu-home .btn-prev-home{background:url(../images/btn-prev-home.png) center center no-repeat; left:0;}
+.actu-home .btn-next-home{background:url(../images/btn-next-home.png) center center no-repeat; right:0;}
+.actu-home .cursor{background:url(../images/cursor-black.png) no-repeat; width:12px; height:6px; position:absolute; top:-331px; left:19px;}
+/*centre*/
+.actu-home .centre-home{ width:300px; float:right;  }
+.actu-home .centre-home .bloc-centres h1 { margin:0 0 14px 0; padding:5px 0 27px 20px; background:#f6f6f6; }
+
+/*--------------------------------------FIN HOME------------------------------------*/
+
+
+
+
+/*--------------------------------------PAGE INTERIEUR------------------------------------*/
+/*-------------------
+    Blocs
+-------------------*/
+
+/*-------------------
+    Bloc Agenda
+-------------------*/
+.bloc-agenda { position:relative; display:block; background:#fff; }
+.bloc-agenda h1 { margin:20px 0 20px 20px; font:24px "Neuton", "Arial"; color:#262219; padding:15px 0 0 0; }
+.bloc-agenda ul li { margin:0 0 10px 20px; }
+.bloc-agenda .bloc-agenda-date { display:block; font:bold 12px "Open Sans", "Arial"; color:#9bb106; }
+.bloc-agenda .bloc-agenda-button { display:block; padding:10px 0; margin:30px 0 0 0; width:100%; background:#b7d00d; color:#262219; text-transform:uppercase; text-align:center; }
+
+/*-------------------
+    Bloc Centres
+-------------------*/
+.bloc-centres { position:relative; display:block; background:#fff; }
+.bloc-centres h1 { margin:30px 0 20px 20px; font:24px "Neuton", "Arial"; color:#262219; padding:15px 0 0 0; }
+.bloc-centres img#map-mercialys { margin:0 0 10px 20px; }
+.bloc-centres figcaption { text-align:center; margin: 0 0 20px 0; padding: 0 0 20px 0; }
+.bloc-centres figcaption #map-mercialys-pointer { display:block; height:20px; width:225px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -124px 0 ; }
+.bloc-centres figcaption span { font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
+
+/*-------------------
+    Bloc Contact
+-------------------*/
+.bloc-contact { position:relative; display:block; background:#fff; }
+.bloc-contact h1 { margin:30px 0 20px 20px; font:24px "Neuton", "Arial"; color:#262219; padding:15px 0 0 0; }
+.bloc-contact p { margin:30px 0 20px 20px; }
+.bloc-contact .bloc-contact-button { display:block; padding:10px 0; margin:30px 0 0 0; width:100%; background:#b7d00d; color:#262219; text-transform:uppercase; text-align:center; }
+/*--------------------------------------fin INTERIEUR------------------------------------*/
+

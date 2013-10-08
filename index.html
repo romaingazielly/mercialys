@@ -7,13 +7,17 @@
 	<title></title> 
 	
 	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
+	<script src="js/modernizr.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/home.js"></script>
 </head> 
 
 <body> 
@@ -22,17 +26,17 @@
 	<div class="top-header center">
 		<hgroup id="hgroup">
 			<h1>Mercialys</h1>
-			<h2>L'esprit voisin</2>
-		<hgroup>
+			<h2>L'esprit voisin</h2>
+		</hgroup>
 			
 		<form id="recherche-header">
-			<p><input type="text" /><input type="image" src="images" /></p>
+			<p><input type="text" placeholder="Recherche..." id="text-head" /><input type="image" src="images/valid-home.png" id="valid-head" /></p>
 		</form>	
 				
 		<nav id="nav-site">	
-			<ul>
+			<ul class="clearfix first-level">
 				<li>
-					<a href="">Accueil</a>
+					<a href="" class="selected">Accueil</a>
 				</li>
 				<li>
 					<a href="">Nous connaître</a>
@@ -53,20 +57,325 @@
 		</nav>		
 		
 		<ul id="nav-top">
-			<li><a href="">Presse</a></li>
-			<li><a href="">Carrière</a></li>
-			<li><a href="">Contact</a></li>
+			<li id="nav-top-presse"><a href="">Presse</a></li>
+			<li id="nav-top-carriere"><a href="">Carrière</a></li>
+			<li id="nav-top-contact"><a href="">Contact</a></li>
 		</ul>
-	
+		
+		<div id="langue">
+			<a href="" class="selected">FR</a>
+			<a href="">EN</a>
+		</div>
 	</div>
 </header>
 
-<section class="content">
+<section class="content clearfix" id="home">
+	<section class="top-home">
+		<div class="center">
+			<!--****************MODULE DEPLACABLE******************-->			
+			<section class="financier clearfix">
+				<article class="bourse bloc-financier">
+					<h2>Bourse</h2>
+					<div class="content-financier">
+						<div class="clearfix">
+							<p class="valeur">14,905 €</p>
+							<p class="percent">+ 1,39 %</p>
+						</div>
+						<p class="info">Euronext PAR, le 08/08/2013 à 12:09</p>
+						<figure class="graphique"><img src="images/fake-grafik.gif" /></figure>
+						<div class="cursor"></div>
+					</div>
+					<a href="" class="link-financier">Accéder aux infos boursières</a>
+				</article><!--fin bourse-->
+			
+				<article class="rapport bloc-financier">
+					<h2>Rapports financiers</h2>
+					<div class="content-financier">
+						<ul>
+							<li class="gris">
+								<h4>Rapport financier<br /> 
+								du 1er semestre 2013</h4>
+								<a href="" class="link">Télécharger le rapport</a>
+							</li>
+							<li>
+								<h4>Rapport d’activité 2012</h4>
+								<a href="" class="link">Télécharger le rapport</a>
+							</li>
+							<li class="gris">
+								<h4>Document de référence 2012</h4>
+								<a href="" class="link">Télécharger le rapport</a>
+							</li>													
+						</ul>						
+						<div class="cursor"></div>
+					</div>	
+					<a href="" class="link-financier">Accéder aux infos financières</a>				
+				</article><!--fin rapport-->
+				
+				<article class="agenda bloc-financier">
+					<h2>Agenda financier</h2>
+					<div class="content-financier">
+						<ul>
+							<li>
+								<p class="date"><span class="day">24</span> <span class="month">juil</span></p>
+								<h4>Réunion d’information<br /> 
+								financière</h4>
+								<a href="" class="link">Ajouter à votre agenda</a>
+							</li>
+							<li class="gris">
+								<p class="date"><span class="day">21</span> <span class="month">Sept</span></p>
+								<h4>Résultats semestriels 2013</h4>
+								<a href="" class="link">Ajouter à votre agenda</a>
+							</li>
+							<li>
+								<p class="date"><span class="day">24</span> <span class="month">juil</span></p>
+								<h4>Publication des résultats<br />
+								annuels 2012</h4>
+								<a href="" class="link">Ajouter à votre agenda</a>
+							</li>																	
+						</ul>
+						<div class="cursor"></div>
+					</div>	
+					<a href="" class="link-financier">Accéder à tous les évènements</a>				
+				</article><!--fin agenda-->
+			</section>
+			<!--****************MODULE DEPLACABLE******************-->
+		</div><!--fin center-->
+	</section><!--fin top home-->
 	
+	
+	
+	
+	<section class="middle-home">
+		<div class="center">
+			<!--****************MODULE DEPLACABLE******************-->			
+			<section class="actu-home clearfix">
+				<div class="actu">
+					<h2>Actualités</h2>
+						<div class="slide-actu">
+							<div class="move-slide-actu">
+								<article class="slide-actu-home">
+									<div class="figure"><img src="images/fake-illu-slider.jpg" /></div>
+									<div class="text-slide-actu">
+										<h4>Mercialys inaugure le centre 
+										bois de bersol à Bordeaux 
+										Pessac</h4>
+										<p>Gràce à ses 6510m² supplémentaires, le centre commercial Bois de Bersol de Pessac double ses boutiques, désormais au nombre de 60.
+										<br /><a href="" class="link-parag">Lire la suite</a></p>
+										
+										<p class="dl-link"><a href="">Télécharger l’article complet</a></p>
+									</div>
+								</article>
+								<article class="slide-actu-home">
+									<div class="figure"><img src="images/fake-illu-slider.jpg" /></div>
+									<div class="text-slide-actu">
+										<h4>Mercialys inaugure le centre 
+										bois de bersol à Bordeaux 
+										Pessac</h4>
+										<p>Gràce à ses 6510m² supplémentaires, le centre commercial Bois de Bersol de Pessac double ses boutiques, désormais au nombre de 60.
+										<br /><a href="" class="link-parag">Lire la suite</a></p>
+										
+										<p class="dl-link"><a href="">Télécharger l’article complet</a></p>
+									</div>
+								</article>
+								<article class="slide-actu-home">
+									<div class="figure"><img src="images/fake-illu-slider.jpg" /></div>
+									<div class="text-slide-actu">
+										<h4>Mercialys inaugure le centre 
+										bois de bersol à Bordeaux 
+										Pessac</h4>
+										<p>Gràce à ses 6510m² supplémentaires, le centre commercial Bois de Bersol de Pessac double ses boutiques, désormais au nombre de 60.
+										<br /><a href="" class="link-parag">Lire la suite</a></p>
+										
+										<p class="dl-link"><a href="">Télécharger l’article complet</a></p>
+									</div>
+								</article>
+							</div><!--fin move slide actu-->
+						</div><!--fin slide actu-->
+						
+						<div class="bottom-slide-home">
+							<a href="">Voir toutes nos actualités</a>
+							<p class="btn-prev-home btn-move">Precedent</p>
+							<p class="btn-next-home btn-move">Suivant</p>
+							<div class="cursor"></div>
+						</div>
+				</div><!--fin actu-->
+				
+				<div class="centre-home">
+					<!-- BLOC CENTRES -->
+					<section class="bloc-centres">
+						<h1>Nos centres commerciaux</h1>
+						<figure>
+							<img id="map-mercialys" src="images/map.jpg" width="266" height="282" alt="Centres commerciaux Mercialys">
+							<figcaption>
+								<img src="images/map-legend.png" width="148" height="21" usemap="#mercialysMap" alt="Localisation centres commerciaux Mercialys">
+								<map name="mercialysMap" id="mercialysMap">
+									<area id="map-red" shape="rect" coords="0,0,15,21" href="#" />
+									<area id="map-green" shape="rect" coords="33,0,48,21" href="#" />
+									<area id="map-yellow" shape="rect" coords="67,0,82,21" href="#" />
+									<area id="map-black" shape="rect" coords="100,0,115,21" href="#" />
+									<area id="map-grey" shape="rect" coords="133,0,148,21" href="#" />
+								</map>
+								<div id="map-mercialys-pointer"></div>
+								<span id="map-mercialys-title">Grand centre commercial</span>
+							</figcaption>
+						</figure>
+					</section>
+					<!-- FIN BLOC CENTRES -->
+				</div><!--fin centre-home-->
+			</section>	
+			<!--****************MODULE DEPLACABLE******************-->	
+			
+		</div>
+	</section><!--fin middle home-->
+	
+	
+	
+	
+	<section class="bottom-home">
+		<div class="center">
+			<!--****************MODULE DEPLACABLE******************-->			
+			<section class="projet-home clearfix">
+				<ul>
+					<li class="proj-1">
+						<a href="" class="bloc-link">
+							<img src="images/fake-proj.png" />
+							<div class="content-proj">
+								<h4><span>Nos projets</span></h4>
+								<div class="my-content-proj">
+									<p>Une façon simple et humaine<br />
+									de faire ses courses au quotidien</p>									
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="proj-2">
+						<a href="" class="bloc-link">
+							<img src="images/fake-proj.png" />
+							<div class="content-proj">
+								<h4><span>Nos locations<br /> 
+								d’espaces temporaires</span></h4>
+								<div class="my-content-proj">
+									<p>Une façon simple et humaine<br />
+									de faire ses courses au quotidien</p>									
+								</div>
+							</div>
+						</a>
+					</li>
+					<li class="proj-3">
+						<a href="" class="bloc-link">
+							<img src="images/fake-proj.png" />
+							<div class="content-proj">
+								<h4><span>L’esprit voisin</span></h4>
+								<div class="my-content-proj">
+									<p>Une façon simple et humaine<br />
+									de faire ses courses au quotidien</p>									
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<div class="motif-pola-left"></div>
+			<div class="motif-pola-right"></div>
+			<!--****************MODULE DEPLACABLE******************-->
+			
+			<section id="social-bottom" class="clearfix">
+				<div class="center">
+					<ul>
+						<li id="sb-linkedin">
+							<a href="">Notre linkedin</a>
+						</li>
+						<li id="sb-viadeo">
+							<a href="">Notre Viadeo</a>
+						</li>
+						<li id="sb-twitter">
+							<a href="">Notre Twitter</a>
+						</li>
+						<li id="sb-facebook">
+							<p class="titre-social">Notre Facebook</p>
+							<a href="">Facebook</a>
+						</li>
+					</ul>
+					<div class="oiseaux"></div>
+				</div>				
+			</section><!--fin social bottom-->
+						
+		</div>
+	</section><!--fin bottom home-->		
 </section><!--fin content-->
 
-<footer>
+<footer id="footer">
+	<div class="bg-pinces"></div>
+	<div class="center top-footer clearfix">
+		<div class="top-footer-left clearfix">
+			<ol>
+				<li class="title">Investisseurs / financiers</li>
+				<li><a href="#">Agenda financier</a></li>
+				<li><a href="#">Publications de résultats</a></li>
+				<li><a href="#">Rapports annuels et documents de référence</a></li>
+			</ol>
+			<ol>
+				<li class="title">Enseignes / commerçants</li>
+				<li><a href="#">Nos centres commerciaux</a></li>
+				<li><a href="#">Nos projets</a></li>
+				<li><a href="#">Notre équipe commerciale</a></li>
+			</ol>
+		</div>
+		
+		<div class="top-footer-middle clearfix">
+			<ol>
+				<li class="title">Commerces éphémères</li>
+				<li><a href="#">Notre offre de locations d’espaces temporaires</a></li>
+				<li><a href="#">Contacts espaces temporaires</a></li>
+			</ol>
+			<ol>
+				<li class="title">Espace presse</li>
+				<li><a href="#">Communiqués de presse</a></li>
+				<li><a href="#">Contact presse</a></li>
+			</ol>
+		</div>
+		
+		<div class="top-footer-right clearfix">
+			<ol>
+				<li class="title">Site Mercialys</li>
+				<li><a href="#">Notre activité</a></li>
+				<li><a href="#">Archives</a></li>
+				<li><a href="#">Plan du site</a></li>
+				<li><a href="#">Mentions légales</a></li>
+				<li><a href="#">Informations cookies</a></li>
+				<li><a href="#">Contactez-nous</a></li>
+			</ol>
+		</div>
+	</div>
 	
+	<div class="bottom-footer clearfix">
+		<div class="center">
+			<div class="foot-bourse">
+				<p>Euronext <br />(SAN)</p>
+				<div>
+					<span id="foot-bourse-value">14,905</span>€
+					<span id="foot-bourse-cote">+ 1,39 %</span>
+				</div>
+			</div>
+			<div class="foot-slider">
+				<a id="foot-slider-left" href="#"></a>
+				<marquee direction="left" scrollamount="5">
+					<p><span>Dernières actus : </span>Mercialys inaugure le centre Bois de Bersol à Bordeaux...</p>
+					<p><span>News : </span>Le nouveau site de Mercialys bientôt en ligne !</p>
+				</marquee>
+				<a id="foot-slider-right" href="#"></a>
+			</div>
+			<div class="foot-social clearfix">
+				<ul>
+					<li><a class="foot-social-rss" href="#"></a></li>
+					<li><a class="foot-social-linkedin" href="#"></a></li>
+					<li><a class="foot-social-viadeo" href="#"></a></li>
+					<li><a class="foot-social-twitter" href="#"></a></li>
+					<li><a class="foot-social-facebook" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </footer>
 
 </body>
