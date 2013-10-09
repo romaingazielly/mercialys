@@ -6,8 +6,8 @@ a{outline: none; color: #262219; text-decoration:none;}
 a img{border:none;}
 :focus{-moz-outline-style: none;}
 fieldset{border:none; margin: 0; padding: 0;}
-input{vertical-align: middle; color:#262219; font-family: arial; font-size:13px;}
-textarea{color:#262219; font-family:arial; font-size:13px;}
+input{vertical-align: middle; color:#262219; font-family:'Open Sans', arial; font-size:13px;}
+textarea{color:#262219; font-family:'Open Sans', arial; font-size:13px;}
 header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 
 
@@ -26,6 +26,13 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 
 
 /*----------------------------HEADER------------------------------*/
+/*--gestion des cookies*/
+.info-top{background:#b7d00d; font-size:12px; padding:12px 0;}
+.info-top p{float:left; padding:3px 0 0 0;}
+.info-top form{float:right;}
+.info-top form input{background:#fff; font-size:12px; font-weight:bold; border:none; padding:3px 12px; display:inline-block; margin-right:20px;}
+.info-top form a{color:#fff; text-decoration:underline;}
+
 #header{background:#fff url(../images/bg-menu.gif) 0 142px repeat-x; position:relative;}
 #header #hgroup{width:266px; height:142px; text-indent:-5000; background:url(../images/logo-mercialys.png) no-repeat;}
 #header #hgroup h1, #header #hgroup h2{text-indent:-5000px;}
@@ -85,7 +92,7 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 #footer .top-footer ol li.title { font:700 14px "Open Sans", "Arial"; color:#b7d00d; line-height:28px; }
 #footer .top-footer ol li a { color:#fff; }
 
-#footer .bottom-footer { background:#0b0805; position:fixed; bottom:0; width:100%;}
+#footer .bottom-footer { background:#0b0805; position:fixed; bottom:0; width:100%; z-index:10;}
 #footer .foot-bourse, #footer .foot-slider, #footer .foot-social { float:left; }
 #footer .bottom-footer .foot-bourse { color:#fff; height:50px; padding:6px 0 0 0; }
 #footer .bottom-footer .foot-bourse p { float:left; font:600 12px "Open Sans", "Arial"; margin:4px 20px 0 0; }

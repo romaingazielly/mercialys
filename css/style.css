@@ -1,8 +1,21 @@
 /*--------------------------------------HOME------------------------------------*/
 
+/*------SLIDER-------*/
+#slider-home{width:100%; height:357px;position:relative;}
+#slider-home.center-slider-home{width:1498px; margin:0 auto;}
+#slider-home #form-slider-home{position:absolute; top:0; right:0; width:466px; height:357px; background:url(../images/fond-form-slider.png) no-repeat;/*-397-*/ z-index:3;}
+#slider-home #my-slider-home{width:100%; height:357px; overflow:hidden; position:relative;}
+#slider-home #slider-move-home{width:15000px; position:absolute; top:0; left:0;}
+#slider-home .article-s-home{position:relative; float:left; width:100%; height:357px;}
+.article-s-home .figure{position:absolute; top:0; left:0;}
+.article-s-home .text-slider-home{z-index:2; position:absolute; width:940px; top:98px; color:#fff; padding:0 0 0 0;}
+.article-s-home .text-slider-home h3{margin-bottom:9px; font-size:48px;color:#fff; line-height:48px; font-family:"Neuton", georgia; text-shadow: -2px 0px 21px #000;}
+.article-s-home .link-slider-home{font-size:12px; text-transform:uppercase; color:#262219; background:#b7d00d; display:inline-block;padding:10px 19px; margin-top:20px;}
+
+
 .top-home{background:url(../images/bg-bois-bottom.jpg) left bottom repeat-x; padding:25px 0 76px 0;}
 .middle-home{padding:25px 0 37px 0;}
-.bottom-home{left top repeat-x; padding:100px 0 39px 0; background:url(../images/bg-bois-top.jpg) repeat-x 0 20px;}
+.bottom-home{padding:100px 0 39px 0; background:url(../images/bg-bois-top.jpg) repeat-x 0 20px;}
 .multiplebgs .bottom-home{background:url(../images/bg-pola.png) no-repeat center 0, url(../images/bg-bois-top.jpg) repeat-x 0 20px}
 
 /*-------MODULE FINANCIER------*/
@@ -87,7 +100,7 @@
     Bloc Agenda
 -------------------*/
 .bloc-agenda { position:relative; display:block; background:#fff; }
-.bloc-agenda h1 { margin:20px 0 20px 20px; font:24px "Neuton", "Arial"; color:#262219; padding:15px 0 0 0; }
+.bloc-agenda h1 { margin:20px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
 .bloc-agenda ul li { margin:0 0 10px 20px; }
 .bloc-agenda .bloc-agenda-date { display:block; font:bold 12px "Open Sans", "Arial"; color:#9bb106; }
 .bloc-agenda .bloc-agenda-button { display:block; padding:10px 0; margin:30px 0 0 0; width:100%; background:#b7d00d; color:#262219; text-transform:uppercase; text-align:center; }
@@ -96,7 +109,7 @@
     Bloc Centres
 -------------------*/
 .bloc-centres { position:relative; display:block; background:#fff; }
-.bloc-centres h1 { margin:30px 0 20px 20px; font:24px "Neuton", "Arial"; color:#262219; padding:15px 0 0 0; }
+.bloc-centres h1 { margin:30px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
 .bloc-centres img#map-mercialys { margin:0 0 10px 20px; }
 .bloc-centres figcaption { text-align:center; margin: 0 0 20px 0; padding: 0 0 20px 0; }
 .bloc-centres figcaption #map-mercialys-pointer { display:block; height:20px; width:225px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -124px 0 ; }
@@ -106,7 +119,7 @@
     Bloc Contact
 -------------------*/
 .bloc-contact { position:relative; display:block; background:#fff; }
-.bloc-contact h1 { margin:30px 0 20px 20px; font:24px "Neuton", "Arial"; color:#262219; padding:15px 0 0 0; }
+.bloc-contact h1 { margin:30px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
 .bloc-contact p { margin:30px 0 20px 20px; }
 .bloc-contact .bloc-contact-button { display:block; padding:10px 0; margin:30px 0 0 0; width:100%; background:#b7d00d; color:#262219; text-transform:uppercase; text-align:center; }
 /*--------------------------------------fin INTERIEUR------------------------------------*/
