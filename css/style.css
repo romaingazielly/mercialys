@@ -109,8 +109,9 @@
     Bloc Centres
 -------------------*/
 .bloc-centres { position:relative; display:block; background:#fff; }
+.bloc-centres figure { text-align:center;  }
 .bloc-centres h1 { margin:30px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
-.bloc-centres img#map-mercialys { margin:0 0 10px 20px; }
+.bloc-centres img#map-mercialys { margin:0 0 10px 0px; }
 .bloc-centres figcaption { text-align:center; margin: 0 0 20px 0; padding: 0 0 20px 0; }
 .bloc-centres figcaption #map-mercialys-pointer { display:block; height:20px; width:225px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -124px 0 ; }
 .bloc-centres figcaption span { font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
@@ -122,5 +123,14 @@
 .bloc-contact h1 { margin:30px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
 .bloc-contact p { margin:30px 0 20px 20px; }
 .bloc-contact .bloc-contact-button { display:block; padding:10px 0; margin:30px 0 0 0; width:100%; background:#b7d00d; color:#262219; text-transform:uppercase; text-align:center; }
+
+/*-------------------
+    Bloc Bourse
+-------------------*/
+.bloc-bourse { position:relative; display:block; background:#fff; }
+.bloc-bourse h1 { margin:30px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
+.bloc-bourse p { margin:0px 0 0px 20px; }
+.bloc-bourse p #bloc-bourse-value { display:inline-block;  font:700 30px "Open Sans", "Arial"; margin:5px 0 20px 0; }
+.bloc-bourse p #bloc-bourse-cote { display:inline-block; font:700 16px "Open Sans", "Arial"; color:#9bb106; line-height:26px; margin:0 0 0 20px; vertical-align:5px; }
 /*--------------------------------------fin INTERIEUR------------------------------------*/
 
