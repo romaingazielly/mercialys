@@ -88,9 +88,9 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 #footer .top-footer-left, #footer .top-footer-middle, #footer .top-footer-right { display:block; float:left; padding:0 0 50px 0; }
 #footer .top-footer-middle, #footer .top-footer-right { padding-left: 55px; }
 #footer .top-footer ol {  margin:0 50px 0 0; min-height:110px }
-#footer .top-footer ol li { color:#fff; font:600 12px "Open Sans", "Arial"; list-style:none; line-height:26px; }
+#footer .top-footer ol li { color:#fff; font:12px "Open Sans", "Arial"; list-style:none; line-height:26px; }
 #footer .top-footer ol li.title { font:700 14px "Open Sans", "Arial"; color:#b7d00d; line-height:28px; }
-#footer .top-footer ol li a { color:#fff; }
+#footer .top-footer ol li a { color:#fff;  }
 
 #footer .bottom-footer { background:#0b0805; position:fixed; bottom:0; width:100%; z-index:10;}
 #footer .foot-bourse, #footer .foot-slider, #footer .foot-social { float:left; }
@@ -108,9 +108,9 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 #footer .foot-social li, #footer .foot-social li a { width:28px; height:28px; float:left; }
 #footer .foot-social li .foot-social-rss { background:url('../images/social-sprite.jpg') no-repeat 0 0; }
 #footer .foot-social li .foot-social-linkedin { background:url('../images/social-sprite.jpg') no-repeat 0 -28px; }
-#footer .foot-social li .foot-social-viadeo { background:url('../images/social-sprite.jpg') no-repeat 0 -56px;; }
-#footer .foot-social li .foot-social-twitter { background:url('../images/social-sprite.jpg') no-repeat 0 -84px;; }
-#footer .foot-social li .foot-social-facebook { background:url('../images/social-sprite.jpg') no-repeat 0 -110px;; }
+#footer .foot-social li .foot-social-viadeo { background:url('../images/social-sprite.jpg') no-repeat 0 -56px; }
+#footer .foot-social li .foot-social-twitter { background:url('../images/social-sprite.jpg') no-repeat 0 -84px; }
+#footer .foot-social li .foot-social-facebook { background:url('../images/social-sprite.jpg') no-repeat 0 -110px; }
 /*------------------------------structure générale------------------------------*/
 body{font-size: 14px; font-family:'Open Sans', arial; color:#262219; background:#f6f6f6;}
 
