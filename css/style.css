@@ -136,7 +136,7 @@ div.selector select option{padding:2px 0;}
 .bloc-centres h1 { margin:30px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
 .bloc-centres img#map-mercialys { margin:0 0 10px 0px; }
 .bloc-centres figcaption { text-align:center; margin: 0 0 20px 0; padding: 0 0 20px 0; }
-.bloc-centres figcaption #map-mercialys-pointer { display:block; height:20px; width:225px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -124px 0 ; }
+.bloc-centres figcaption #map-mercialys-pointer { display:block; height:20px; width:225px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -124px 0; }
 .bloc-centres figcaption span { font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
 
 /*-------------------
@@ -155,5 +155,55 @@ div.selector select option{padding:2px 0;}
 .bloc-bourse p { margin:0px 0 0px 20px; }
 .bloc-bourse p #bloc-bourse-value { display:inline-block;  font:700 30px "Open Sans", "Arial"; margin:5px 0 20px 0; }
 .bloc-bourse p #bloc-bourse-cote { display:inline-block; font:700 16px "Open Sans", "Arial"; color:#9bb106; line-height:26px; margin:0 0 0 20px; vertical-align:5px; }
+
+/*-------------------
+    Slider Actus
+-------------------*/
+#slider-actu { width:600px; overflow:hidden; }
+#slider-actu #sa-slides { width:5000px; }
+#slider-actu #sa-slides > div { width:600px; float:left; }
+#slider-actu #sa-slides figcaption { margin:20px 50px; }
+#slider-actu #sa-slides figcaption h1 { font:700 18px "Open Sans", "Arial"; color:#9bb106; width:390px; margin:0 0 10px 0; }
+#slider-actu #sa-slides figcaption p { font:13px "Open Sans", "Arial"; color:#262219; }
+#slider-actu #sa-slides figcaption p a { display:block; text-decoration:underline; }
+#slider-actu #sa-nav { width:600px; height:53px; background:#b7d00d; text-align:center; }
+#slider-actu #sa-nav #sa-left { display:block; float:left; width:53px; height:53px; background:url('../images/slider-actu-nav.jpg') no-repeat 0 0; }
+#slider-actu #sa-nav #sa-right { display:block; float:left;  width:53px; height:53px; background:url('../images/slider-actu-nav.jpg') no-repeat 0 -53px; }
+#slider-actu #sa-nav > div { height:53px; width:494px; float:left; text-align:center; text-align:center; margin:auto;  }
+#slider-actu #sa-nav #sa-nav-slide { width:80px; margin:auto; }
+#slider-actu #sa-nav #sa-nav-slide li { width:8px; height:8px; float:left; margin:22px 5px 0 5px; list-style:none; }
+#slider-actu #sa-nav #sa-nav-slide li a { display:block; float:left; width:8px; height:8px; background:url('../images/bullets.png') no-repeat 0 -10px; }
+#slider-actu #sa-nav #sa-nav-slide li a.current { background:url('../images/bullets.png') no-repeat 0 0px; }
+
+#actualites #actualites-all { margin:50px 0 0 0; }
+#actualites #actualites-all h1 { font:26px "Neuton", "georgia"; display:inline; }
+#actualites #actualites-all a#actu-filtre-button { vertical-align:3px; float:right; padding:10px 40px 15px 20px; text-transform:uppercase; background:#fff url('../images/filtre-arr.gif') no-repeat 80px 18px;; }
+#actualites #actualites-all #actu-filter { background:#fff; margin-top:15px; height:0; overflow:hidden; }
+#actualites #actualites-all #actu-filter p { color:#9bb106; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; padding:25px 30px 10px 30px; }
+#actualites #actualites-all #actu-filter .select select { display:block; float:left; background: transparent; width: 200px; padding:0px 0 10px 10px; font:500 12px "Open Sans"; border: 0; border-radius: 0; height: 35px; color:#717171; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor:pointer; }
+#actualites #actualites-all #actu-filter .select { margin:0 0 0 30px; float:left;  width:180px; height: 26px; overflow: hidden; background: url('../images/select-arr.png') no-repeat 100% center #fff; border: 1px solid #e0e0e0; border-radius:15px; border-right:none; }
+#actualites #actualites-all #actu-filter input { margin:0 0 0 30px; }
+#actualites #actualites-all #actu-filter #af-date, #actualites #actualites-all #actu-filter #af-keywords { float:left; width:200px; width:50%; }
+#actualites #actualites-all #actu-filter #af-keywords input { padding:3px 30px 3px 10px; border:solid 1px #ebebeb; border-radius:15px; width:205px; background:#fff url('../images/zoom.gif') no-repeat 180px center; }
+#actualites #actualites-all #actu-filter #af-theme { clear:left; }
+#actualites #actualites-all #actu-filter #af-theme div { margin:0; display:inline-block; vertical-align:top; }
+#actualites #actualites-all #actu-filter #af-theme input { margin:0 5px 0 30px; }
+#actualites #actualites-all #actu-filter #af-theme div label { display:block;  margin:0 0 5px 0; }
+#actualites #actualites-all #actu-filter #af-theme div label b { font-weight:normal; padding-left:51px; }
+#actualites #actualites-all #actu-filter input[type="submit"] { margin:20px 0 30px 460px; background:#b7d00d; border:none; padding:10px 20px; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; }
+
+#actualites #actu-list li { display:block; padding:20px 0; border-bottom:solid 1px #e4e4e4; }
+#actualites #actu-list li:last-child { border-bottom:none; }
+#actualites #actu-list li figure img { float:left; margin:0 30px 0 0; }
+#actualites #actu-list li figure figcaption {   }
+#actualites #actu-list li figure figcaption time { font:700 12px "Open Sans", "Arial"; color:#262219; }
+#actualites #actu-list li figure figcaption span { font: 12px "Open Sans", "Arial"; color:#262219; margin-left:20px; background:#fff; padding:0 8px; }
+#actualites #actu-list li figure figcaption p { font: 13px "Open Sans", "Arial"; margin:0 20px 0 0; }
+#actualites #actu-list li figure figcaption p a { text-decoration:underline; }
+#actualites #actu-list li figure figcaption h1 { display:block; font:18px "Open Sans", "Arial"; color:#9bb106; line-height:18px; margin:8px 0 10px 0; width:500px; }
+#actualites #actu-list-pagination ul { text-align:center; margin:50px auto 0; }
+#actualites #actu-list-pagination li { display:inline-block; padding:0 3px; }
+#actualites #actu-list-pagination li a { background:#fff; padding:3px 7px; font:bold 11px "Open Sans", "Arial"; }
+#actualites #actu-list-pagination li a.active { background:#9bb106; }
 /*--------------------------------------fin INTERIEUR------------------------------------*/
 
