@@ -18,7 +18,7 @@
 	<script src="js/bgpos.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/actu.js"></script>
+	<script src="js/home.js"></script>
 </head> 
 
 <body> 
@@ -75,135 +75,79 @@
 	 	<div id="ariane">
 	 		<ul>
 	 			<li><a href="">Accueil</a> ></li>
-				<li><span>Nos Actualités</span></li>
+				<li><a href="">Nous connaitre</a> ></li>
+				<li><a href="">Gouvernance</a> ></li>
+				<li><a href="">Comité de direction</a> ></li>
+				<li><span>Marie Touraine</span></li>
 	 		</ul>
 	 	</div>
-
-			<h1>L'actualité chez Mercialys</h1>
-
-		<div id="actualites">			
-			<section id="slider-actu">
-				<div id="sa-slides" class="clearfix">
-					<div id="sa-slide1">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide1">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Gràce à ses 6510m² supplémentaires, le centre commercial Bois de Bersol de Pessac double ses boutiques, désormais au nombre de 60. <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
+	
+			<h1>Gloassaire Mercialys</h1>
+	 		
+			<div id="glossaire">
+				<section class="top-glossaire clearfix" >
+					<div class="left-glossaire">
+						<h3>Recherche par ordre alphabétique :</h3>
+						<ul class="clearfix">
+							<li><a href="" class="selected">A</a></li>
+							<li><a href="">B</a></li>
+							<li><a href="">C</a></li>
+							<li><a href="">D</a></li>
+							<li><a href="">E</a></li>
+							<li><a href="">F</a></li>
+							<li><a href="">G</a></li>
+							<li><a href="">H</a></li>
+							<li><a href="">I</a></li>
+							<li><a href="">J</a></li>
+							<li><a href="">K</a></li>
+							<li><a href="">L</a></li>
+							<li><a href="">M</a></li>
+							<li><a href="">N</a></li>
+							<li><a href="">O</a></li>
+							<li><a href="">P</a></li>
+							<li><a href="">Q</a></li>
+							<li><a href="">R</a></li>
+							<li><a href="">S</a></li>
+							<li><a href="">T</a></li>
+							<li><a href="">U</a></li>
+							<li><a href="">V</a></li>
+							<li><a href="">W</a></li>
+							<li><a href="">X</a></li>
+							<li><a href="">Y</a></li>
+							<li><a href="">Z</a></li>
+						</ul>
 					</div>
-
-					<div id="sa-slide2">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide2">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Coucou <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
+					<div class="right-glossaire">
+						<h3>Recherche par mots-clés :</h3>
+						<form>
+							<p><input type="text" id="text-rech" placeholder="Recherchez..."><input type="image" id="valid-rech" src="images/valid-rech.png"></p>
+						</form>
 					</div>
-
-					<div id="sa-slide3">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide3">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Hello Mercialys <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div id="sa-slide4">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide4">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Gràce à ses 6510m² supplémentaires, le centre commercial Bois de Bersol de Pessac double ses boutiques, désormais au nombre de 60. <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<div id="sa-nav">
-					<a id="sa-left" href="#"></a>
-					<div>
-						<ol id="sa-nav-slide">
-							<li><a id="nav-slide1" class="current" href="#"></a></li>
-							<li><a id="nav-slide2" href="#"></a></li>
-							<li><a id="nav-slide3" href="#"></a></li>
-							<li><a id="nav-slide4" href="#"></a></li>
-						</ol>
-					</div>
-					<a id="sa-right" href="#"></a>
-				</div>
-			</section>
-
-			<section id="actualites-all">
-				<h1>Toutes nos actualités</h1>
-				<a id="actu-filtre-button" href="#">Filtrer</a>
-				<form id="actu-filter">
-					<div id="af-date">
-						<p>Par date :</p>
-						<div class="select">
-							<select id="date-choice">
-							    <option value="0" selected="selected">Choisissez une année</option>
-							    <option value="2013">2013</option>
-							    <option value="2014">2014</option>
-							</select>
-						</div>
-					</div>
-					<div id="af-keywords">
-						<p>Par mots-clés :</p>
-						<input type="text" placeholder="Recherchez...."/>
-					</div>
-					<div id="af-theme">
-						<p>Par thème :</p>
-						<div>
-							<label><input type="checkbox"/> Tous (<span>45</span>)</label>
-							<label><input type="checkbox"/> Gouvernance (<span>12</span>)</label>
-							<label><input type="checkbox"/> Palmarès (<span>6</span>)</label>
-						</div>
-						
-						<div>
-							<label><input type="checkbox"/> Centres commerciaux (<span>5</span>)</label>
-							<label><input type="checkbox"/> Réalisations (<span>17</span>)</label>
-							<label><input type="checkbox"/> Projets (<span>16</span>)</label>
-						</div>
-
-						<div>
-							<label><input type="checkbox"/> Développement <br /><b>Durable</b> (<span>5</span>)</label>
-						</div>
-					</div>
-					<input value="Valider" type="submit" />
-				</form>
-
-				<ul id="actu-list">
-					<li>
-						<figure>
-							<img src="images/actu1.jpg" alt="actu1">
-							<figcaption>
-								<time datetime="2013-10-11">11 Octobre 2013</time>
-								<span id="actu-tags">Gourvernance</span>
-								<h1>Sandrine Abihssira est nommée Directrice Commerciale de Mercialys</h1>
-								<p>Sandrine Abihssira, 43 ans, rejoint le comité de direction de Mercialys auprès d’Eric le Gentil en tant que responsable de la Direction Commerciale. 
-								<a href="#">Lire la suite...</a></p>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="images/actu1.jpg" alt="actu1">
-							<figcaption>
-								<time datetime="2013-10-11">11 Octobre 2013</time>
-								<span id="actu-tags">Gourvernance</span>
-								<h1>Sandrine Abihssira est nommée Directrice Commerciale de Mercialys</h1>
-								<p>Sandrine Abihssira, 43 ans, rejoint le comité de direction de Mercialys auprès d’Eric le Gentil en tant que responsable de la Direction Commerciale. 
-								<a href="#">Lire la suite...</a></p>
-							</figcaption>
-						</figure>
-					</li>
-				</ul>
-
+				</section><!--fin top gloassaire-->
+				
+				<section class="result-glossaire">
+					<article class="article">
+						<h4>Actif Net Réévalué (ANR)</h4>
+						<p>Valeur patrimoniale nette de la société. Le calcul de l’actif net réévalué s’effectue en reprenant le montant de l’actif net après amortissements diminué du montant des dettes exigibles. Le nouvel actif net est ensuite retraité pour éliminer les non-valeurs (frais d’établissement,...) et réévaluer certains biens à leur juste valeur (immeubles, stocks,...) afin d’aboutir à l’actif net réévalué.</p>
+					</article>
+					<article class="article">
+						<h4>Actif Net Réévalué (ANR)</h4>
+						<p>Valeur patrimoniale nette de la société. Le calcul de l’actif net réévalué s’effectue en reprenant le montant de l’actif net après amortissements diminué du montant des dettes exigibles. Le nouvel actif net est ensuite retraité pour éliminer les non-valeurs (frais d’établissement,...) et réévaluer certains biens à leur juste valeur (immeubles, stocks,...) afin d’aboutir à l’actif net réévalué.</p>
+					</article>
+					<article class="article">
+						<h4>Actif Net Réévalué (ANR)</h4>
+						<p>Valeur patrimoniale nette de la société. Le calcul de l’actif net réévalué s’effectue en reprenant le montant de l’actif net après amortissements diminué du montant des dettes exigibles. Le nouvel actif net est ensuite retraité pour éliminer les non-valeurs (frais d’établissement,...) et réévaluer certains biens à leur juste valeur (immeubles, stocks,...) afin d’aboutir à l’actif net réévalué.</p>
+					</article>
+					<article class="article">
+						<h4>Actif Net Réévalué (ANR)</h4>
+						<p>Valeur patrimoniale nette de la société. Le calcul de l’actif net réévalué s’effectue en reprenant le montant de l’actif net après amortissements diminué du montant des dettes exigibles. Le nouvel actif net est ensuite retraité pour éliminer les non-valeurs (frais d’établissement,...) et réévaluer certains biens à leur juste valeur (immeubles, stocks,...) afin d’aboutir à l’actif net réévalué.</p>
+					</article>
+					<article class="article">
+						<h4>Actif Net Réévalué (ANR)</h4>
+						<p>Valeur patrimoniale nette de la société. Le calcul de l’actif net réévalué s’effectue en reprenant le montant de l’actif net après amortissements diminué du montant des dettes exigibles. Le nouvel actif net est ensuite retraité pour éliminer les non-valeurs (frais d’établissement,...) et réévaluer certains biens à leur juste valeur (immeubles, stocks,...) afin d’aboutir à l’actif net réévalué.</p>
+					</article>
+				</section><!--fin result glossaire-->
+				
 				<nav id="actu-list-pagination">
 					<ul>
 						<li><a class="active" href="#">1</a></li>
@@ -215,9 +159,8 @@
 						<li><a href="#">>></a></li>
 					</ul>
 				</nav>
-			</section>
-		</div>
-
+				
+			</div><!--fin glossaire-->
 		
 	</section><!--left content-->
 	
@@ -270,14 +213,6 @@
 			</figure>
 		</section>
 		<!-- FIN BLOC CENTRES -->
-
-		<!-- BLOC BOURSE -->
-		<section class="bloc-bourse">
-			<h1>Bourse</h1>
-			<p>Euronext (SAN) le <span id="bloc-bourse-date">08/08/2013</span> à <span id="bloc-bourse-time">12:08</span></p>
-			<p><span id="bloc-bourse-value">14,905 €</span> <span id="bloc-bourse-cote">+ 1,39 %</span></p>
-		</section>
-		<!-- FIN BLOC Bourse -->
 
 		<!-- BLOC CONTACT -->
 		<section class="bloc-contact">

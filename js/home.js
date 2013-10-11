@@ -15,6 +15,7 @@ $(function(){
 	});
 	resizeSlide();
 	initSlider();
+	$('#form-slider-home select').uniform();
 });
 /*------SLIDER TOP HOME-------------*/
 

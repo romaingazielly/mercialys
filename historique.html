@@ -8,7 +8,6 @@
 	
 	<link rel="stylesheet" href="css/common.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/historique.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
@@ -20,6 +19,7 @@
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/masonry.js"></script>
+	<script src="js/waypoint.js"></script>
 	<script src="js/historique.js"></script>
 </head> 
 
@@ -88,50 +88,74 @@
 	
 		<h1>Notre histoire</h1>
 		
-		<div class="nav-historique">
+		<div id="nav-historique">
 			<ul>
 				<li>
-					<p class="year">2012</p>
+					<a href="#histo-1">
+						<figure class="figure"><img src="images/histoire-cap.jpg" /></figure>
+						<div class="text-nav-histo">
+							<p class="year">2012</p>
+							<p class="titre-histo">Cap sur la foncière commerçante</h6>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#histo-2">
+						<figure class="figure"><img src="images/histoire-alcudia.jpg" /></figure>
+						<div class="text-nav-histo">
+							<p class="year">2011 - 2006</p>
+							<p class="titre-histo">Les années Alcudia</h6>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#histo-3">
+						<figure class="figure"><img src="images/histoire-debut.jpg" /></figure>
+						<div class="text-nav-histo">
+							<p class="year">2006 - 1988</p>
+							<p class="titre-histo">Les débuts de Marcialys</h6>
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>
 		
 		<div class="entete-historique">
 			<p class="annee">2012</p>
-			<h4>Cap sur la foncière commerçcante</h4>
+			<h4>Cap sur la foncière commerçante</h4>
 		</div>
-		<div class="historique clearfix">
+		<div class="historique clearfix" id="histo-1">
 			<div class="item-historique clearfix">
 				<div class="bloc-historique">
-					<h3>1 2ème semestre 2012</h3>
+					<h3>2ème semestre 2012</h3>
 					<p>Livraison des projets L’Esprit Voisin de Montauban, Narbonne, Istres et Pessac.
 					La société recentre son portefeuille en cédant 232 millions d’euros d’actifs non adaptés au déploiement de la nouvelle stratégie de Foncière commerçante.</p>
 				</div>	
-				<div class="histo-point"></div>			
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>			
 			</div>
 
 			<div class="item-historique clearfix">
 				<div class="bloc-historique">
-					<h3>2 Avril 2012</h3>
+					<h3>Avril 2012</h3>
 					<p>Pour marquer l’achèvement de sa première phase stratégique, Mercialys réalise une distribution exceptionnelle d’1 milliard d’euros à ses actionnaires.</p>
 				</div>
-				<div class="histo-point"></div>					
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>					
 			</div>
 
 			<div class="item-historique clearfix">
 				<div class="bloc-historique">
-					<h3>3 mars 2012</h3>
+					<h3>mars 2012</h3>
 					<p>Standard & Poor’s publie la première notation de la société : BBB avec une perspective stable.</p>
 				</div>	
-				<div class="histo-point"></div>				
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
 			</div>
 
 			<div class="item-historique clearfix">
 				<div class="bloc-historique">
-					<h3>4 1er semestre 2012</h3>
+					<h3>1er semestre 2012</h3>
 					<p>Livraison des projets L’Esprit Voisin de d’Agen Boé, Quimper, Fréjus & Rodez.</p>
 				</div>		
-				<div class="histo-point"></div>			
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>			
 			</div>
 
 			<div class="item-historique clearfix">
@@ -139,9 +163,170 @@
 					<h3>5 février 2012</h3>
 					<p>Mercialys entame une nouvelle phase stratégique basée sur sa vision de Foncière Commerçante. Cette nouvelle stratégie s’accompagne d’une normalisation de la structure financière de la société. La société souscrit ses premiers investissements pour un montant de 1.25 milliards d’euros.</p>
 				</div>	
-				<div class="histo-point"></div>				
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
 			</div>
+		</div><!--fin historique-->
+		
+		<div class="entete-historique">
+			<p class="annee">2011 - 2006</p>
+			<h4>Les années Alcudia</h4>
 		</div>
+		<div class="historique clearfix" id="histo-2">
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>décembre 2011</h3>
+					<p>Poursuite de la politique de rotation d’actifs : 16 actifs cédés pour 120M€, soit 5% du portefeuille.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>			
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>2ème semestre 2011</h3>
+					<p>Livraison des projets L’Esprit voisin de Villefranche-sur-Saône, Auxerre, Annemasse et Angers.
+					Acquisition du centre de Brive Malemort.</p>
+				</div>
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>					
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>juillet 2011</h3>
+					<p>Création d’un partenariat avec Union Investment via un OPCI détenu à 19,99% par Mercialys destiné à accueillir des actifs matures. Acquisition d’un premier actif situé à Bordeaux Pessac pour 80 millions d’euros.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>1er semestre 2011</h3>
+					<p>Livraison des projets L’Esprit Voisin de Nimes, Geispolsheim, Marseille la Valentine (phase 1), Les Sables d’Olonne, Ajaccio, Montauban & Annecy (MS).</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>31 décembre 2010</h3>
+					<p>Poursuite de la politique de Acquisition du centre commercial 
+					La Caserne de Bonne à Grenoble pour 92.9M d’euros.</p>
+				</div>		
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>			
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>décembre 2010</h3>
+					<p>Une nouvelle étape dans la stratégie de Mercialys : la société réalise pour la premiere fois des cessions d’actifs.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+			
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>octobre 2010</h3>
+					<p>Fin de l’engagement de 
+					conservation des actifs reçus par voie d’apport en 2005.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+			
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>MAI à octobre 2010</h3>
+					<p>Livraison des programmes de développement des sites de Castres, Brest, Sainte-Marie Duparc (La réunion), Annecy Seynod, Fontaine-les-dijon, Paris St Didier et Lons-le-Saunier.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+			
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>décembre 2009</h3>
+					<p>Mercialys intègre le SBF 120</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+			
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>mai 2009</h3>
+					<p>Acquisition par voie d’apport d’un portefeuille de 25 actifs à développer auprès des Casino pour 344M€. Au terme de cette opération, Casino détient 51% de Mercialys.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+			
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>novembre 2008 à mars 2009</h3>
+					<p>Livraison des programmes de développement des sites d’Arles, Valence Sud, Lanester, Le Puy & Besançon Chateaufarine.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+			
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>décembre 2007</h3>
+					<p>Acquisition par voie d’apport d’un portefeuille de 5 centres commerciaux à La Réunion pour 74M€.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+			
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>JUILLET 2006</h3>
+					<p>Lancement du programme 
+					Alcudia / L’Esprit Voisin.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+		</div><!--fin historique-->	
+		
+		<div class="entete-historique">
+			<p class="annee">2012</p>
+			<h4>Cap sur la foncière commerçcante</h4>
+		</div>
+		<div class="historique clearfix" id="histo-3">
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>1 2ème semestre 2012</h3>
+					<p>Livraison des projets L’Esprit Voisin de Montauban, Narbonne, Istres et Pessac.
+					La société recentre son portefeuille en cédant 232 millions d’euros d’actifs non adaptés au déploiement de la nouvelle stratégie de Foncière commerçante.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>			
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>2 Avril 2012</h3>
+					<p>Pour marquer l’achèvement de sa première phase stratégique, Mercialys réalise une distribution exceptionnelle d’1 milliard d’euros à ses actionnaires.</p>
+				</div>
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>					
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>3 mars 2012</h3>
+					<p>Standard & Poor’s publie la première notation de la société : BBB avec une perspective stable.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>4 1er semestre 2012</h3>
+					<p>Livraison des projets L’Esprit Voisin de d’Agen Boé, Quimper, Fréjus & Rodez.</p>
+				</div>		
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>			
+			</div>
+
+			<div class="item-historique clearfix">
+				<div class="bloc-historique">
+					<h3>5 février 2012</h3>
+					<p>Mercialys entame une nouvelle phase stratégique basée sur sa vision de Foncière Commerçante. Cette nouvelle stratégie s’accompagne d’une normalisation de la structure financière de la société. La société souscrit ses premiers investissements pour un montant de 1.25 milliards d’euros.</p>
+				</div>	
+				<div class="histo-point"><div class="tirets"></div><img src="images/bullet-point-histo.png" /></div>				
+			</div>
+		</div><!--fin historique-->			
 
 	</section><!--left content-->
 	

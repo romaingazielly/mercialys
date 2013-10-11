@@ -115,30 +115,14 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 body{font-size: 14px; font-family:'Open Sans', arial; color:#262219; background:#f6f6f6;}
 
 
-#ariane{margin:30px 0 20px 0;}
+#ariane{margin:0 0 22px 0;}
 #ariane ul li{display:inline; color:#8e8c87; font-size:11px;}
 #ariane ul li a{display:inline; color:#8e8c87; text-decoration:underline;}
 #ariane ul li span{color:#262219;}
 /*-----------------2 col---------------*/
-#left-content{width:600px; float:left;}
-#right-content{width:300px; float:right;}
+#left-content{width:600px; float:left; padding:30px 0 0 0;}
+#right-content{width:300px; float:right; padding:30px 0 0 0;}
 
-/*-----------------Structure Statique---------------*/
-#direction p { margin:0 0 15px 0; }
-#direction blockquote { font:italic 23px "Neuton", "Arial"; }
-#direction hr { display:block; border:none; background:#e4e4e4; height:1px; margin:30px 0 20px 0; }
-#direction .big-figure { margin:0 0 20px 0; }
-#direction .big-figure img{ display:block; }
-#direction .big-figure h2 { color:#9bb106; font:700 18px "Open Sans", "Arial"; margin:20px 0 5px 0; }
-#direction .big-figure p { color:#262219; font:600 14px "Open Sans", "Arial"; }
-#direction .people h3 { font:26px "Neuton", "Arial"; color:#262219; margin:0 0 20px 0; }
-#direction .people a { float:left; margin-right:5px; }
-#direction .people li { list-style:none; float:left; margin:20px 0px 0 0; min-width:200px;}
-#direction .people a:nth-child(3n) li { margin:20px 0 0 0; min-width:185px; }
-#direction .people li p { margin:0 0 0 0; }
-#direction .people li hr { width:30px; background:#000; margin:10px 0 0 0; }
-#direction .people li:hover { color:#9bb106;}
-#direction .people li:hover hr { background:#9bb106; }
-#direction .people.nopic a { min-width:200px; }
-#direction .people.nopic a:nth-child(even) { margin-left:100px; }
+
+
 

@@ -18,7 +18,7 @@
 	<script src="js/bgpos.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/actu.js"></script>
+	<script src="js/home.js"></script>
 </head> 
 
 <body> 
@@ -75,148 +75,67 @@
 	 	<div id="ariane">
 	 		<ul>
 	 			<li><a href="">Accueil</a> ></li>
-				<li><span>Nos Actualités</span></li>
+				<li><a href="">Nous connaitre</a> ></li>
+				<li><a href="">Gouvernance</a> ></li>
+				<li><a href="">Comité de direction</a> ></li>
+				<li><span>Marie Touraine</span></li>
 	 		</ul>
 	 	</div>
 
-			<h1>L'actualité chez Mercialys</h1>
+			<h1>Notre stratégie</h1>
 
-		<div id="actualites">			
-			<section id="slider-actu">
-				<div id="sa-slides" class="clearfix">
-					<div id="sa-slide1">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide1">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Gràce à ses 6510m² supplémentaires, le centre commercial Bois de Bersol de Pessac double ses boutiques, désormais au nombre de 60. <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
-					</div>
+		<div class="template">
+			<div class="module-tiny clearfix">
+				<figure class="big-figure"><img src="images/fake-big.jpg" /></figure>
+				<p><strong>Sous l’autorité du Directeur Général, le Comité de Direction Générale assure le pilotage opérationnel du Groupe. Il met en œuvre la stratégie du Groupe définie par le Conseil d’administration. </strong></p>
 
-					<div id="sa-slide2">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide2">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Coucou <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
-					</div>
+				<p>Organe de réflexion stratégique, de coordination et de partage des initiatives, ainsi que de suivi des projets transversaux, il s’assure de la cohérence des plans d’actions engagés. Il suit les résultats et les équilibres financiers du Groupe et décide des plans d’action à mettre en œuvre. Il réalise une revue mensuelle des résultats et des indicateurs de gestion. Le Comité de Direction Générale se réunit deux fois par mois.</p>				
+			</div><!--fin module tiny-->			
 
-					<div id="sa-slide3">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide3">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Hello Mercialys <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
-					</div>
-
-					<div id="sa-slide4">
-						<figure>
-							<img src="images/slide1.jpg" alt="slide4">
-							<figcaption>
-								<h1>Mercialys inaugure le centre bois de bersol à Bordeaux Pessac</h1>
-								<p>Gràce à ses 6510m² supplémentaires, le centre commercial Bois de Bersol de Pessac double ses boutiques, désormais au nombre de 60. <a href="#">Lire la suite</a></p>
-							</figcaption>
-						</figure>
-					</div>
-				</div>
-				<div id="sa-nav">
-					<a id="sa-left" href="#"></a>
-					<div>
-						<ol id="sa-nav-slide">
-							<li><a id="nav-slide1" class="current" href="#"></a></li>
-							<li><a id="nav-slide2" href="#"></a></li>
-							<li><a id="nav-slide3" href="#"></a></li>
-							<li><a id="nav-slide4" href="#"></a></li>
-						</ol>
-					</div>
-					<a id="sa-right" href="#"></a>
-				</div>
-			</section>
-
-			<section id="actualites-all">
-				<h1>Toutes nos actualités</h1>
-				<a id="actu-filtre-button" href="#">Filtrer</a>
-				<form id="actu-filter">
-					<div id="af-date">
-						<p>Par date :</p>
-						<div class="select">
-							<select id="date-choice">
-							    <option value="0" selected="selected">Choisissez une année</option>
-							    <option value="2013">2013</option>
-							    <option value="2014">2014</option>
-							</select>
-						</div>
-					</div>
-					<div id="af-keywords">
-						<p>Par mots-clés :</p>
-						<input type="text" placeholder="Recherchez...."/>
-					</div>
-					<div id="af-theme">
-						<p>Par thème :</p>
-						<div>
-							<label><input type="checkbox"/> Tous (<span>45</span>)</label>
-							<label><input type="checkbox"/> Gouvernance (<span>12</span>)</label>
-							<label><input type="checkbox"/> Palmarès (<span>6</span>)</label>
-						</div>
-						
-						<div>
-							<label><input type="checkbox"/> Centres commerciaux (<span>5</span>)</label>
-							<label><input type="checkbox"/> Réalisations (<span>17</span>)</label>
-							<label><input type="checkbox"/> Projets (<span>16</span>)</label>
-						</div>
-
-						<div>
-							<label><input type="checkbox"/> Développement <br /><b>Durable</b> (<span>5</span>)</label>
-						</div>
-					</div>
-					<input value="Valider" type="submit" />
-				</form>
-
-				<ul id="actu-list">
-					<li>
-						<figure>
-							<img src="images/actu1.jpg" alt="actu1">
-							<figcaption>
-								<time datetime="2013-10-11">11 Octobre 2013</time>
-								<span id="actu-tags">Gourvernance</span>
-								<h1>Sandrine Abihssira est nommée Directrice Commerciale de Mercialys</h1>
-								<p>Sandrine Abihssira, 43 ans, rejoint le comité de direction de Mercialys auprès d’Eric le Gentil en tant que responsable de la Direction Commerciale. 
-								<a href="#">Lire la suite...</a></p>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="images/actu1.jpg" alt="actu1">
-							<figcaption>
-								<time datetime="2013-10-11">11 Octobre 2013</time>
-								<span id="actu-tags">Gourvernance</span>
-								<h1>Sandrine Abihssira est nommée Directrice Commerciale de Mercialys</h1>
-								<p>Sandrine Abihssira, 43 ans, rejoint le comité de direction de Mercialys auprès d’Eric le Gentil en tant que responsable de la Direction Commerciale. 
-								<a href="#">Lire la suite...</a></p>
-							</figcaption>
-						</figure>
-					</li>
-				</ul>
-
-				<nav id="actu-list-pagination">
-					<ul>
-						<li><a class="active" href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">Suivant ></a></li>
-						<li><a href="#">>></a></li>
-					</ul>
-				</nav>
-			</section>
-		</div>
+			<div class="module-tiny clearfix">
+				<figure class="figure-right"><img src="images/fake-small.jpg" /></figure>
+				
+				<!--debut champs tiny-->
+				<h2>Nos principes</h2>
+				<p>Sous l’autorité du Directeur Général, le Comité de Direction Générale assure le pilotage opérationnel du Groupe. Il met en œuvre la stratégie du Groupe définie par le Conseil d’administration.</p>
+				<br />
+				<p class="quote">“Donec varius nisl sed sapien convallis scelerisque. Fusce varius sed mi commodo mollis. Etiam vulputate arcu vel urna ornare, et scelerisque lacus pulvinar. ”</p><br />
+				<p>Organe de réflexion stratégique, de coordination et de partage des initiatives, ainsi que de suivi des projets transversaux, il s’assure de la cohérence des plans d’actions engagés. Il suit les résultats et les équilibres financiers du Groupe et décide des plans d’action à mettre en œuvre. Il réalise une revue mensuelle des résultats et des indicateurs de gestion. Le Comité de Direction Générale se réunit deux fois par mois.</p>	
+				<!--fin champs tiny-->
+				
+				<a href="" class="link">télécharger la présentation<br /> 
+				du rapport annuel 2012</a>
+							
+			</div>	<!--fin module tiny-->
+			
+			<div class="module-tiny clearfix">
+				<figure class="figure-left"><img src="images/fake-small.jpg" /></figure>
+				
+				<!--debut champs tiny-->
+				<h2>Nos principes</h2>
+				<p>Sous l’autorité du Directeur Général, le Comité de Direction Générale assure le pilotage opérationnel du Groupe. Il met en œuvre la stratégie du Groupe définie par le Conseil d’administration.</p>
+				<br />
+				<p class="quote">“Donec varius nisl sed sapien convallis scelerisque. Fusce varius sed mi commodo mollis. Etiam vulputate arcu vel urna ornare, et scelerisque lacus pulvinar. ”</p><br />
+				<p>Organe de réflexion stratégique, de coordination et de partage des initiatives, ainsi que de suivi des projets transversaux, il s’assure de la cohérence des plans d’actions engagés. Il suit les résultats et les équilibres financiers du Groupe et décide des plans d’action à mettre en œuvre. Il réalise une revue mensuelle des résultats et des indicateurs de gestion. Le Comité de Direction Générale se réunit deux fois par mois.</p>	
+				<!--fin champs tiny-->
+				
+				<a href="" class="link">télécharger la présentation<br /> 
+				du rapport annuel 2012</a>
+							
+			</div>	<!--fin module tiny-->	
+			
+			<div class="module-tiny clearfix">
+				<figure class="big-figure"><img src="images/fake-big.jpg" /></figure>
+				
+				<!--debut champs tiny-->
+				<h2>Nos principes</h2>
+				<p>Sous l’autorité du Directeur Général, le Comité de Direction Générale assure le pilotage opérationnel du Groupe. Il met en œuvre la stratégie du Groupe définie par le Conseil d’administration.</p>
+				<br />
+				<p>Organe de réflexion stratégique, de coordination et de partage des initiatives, ainsi que de suivi des projets transversaux, il s’assure de la cohérence des plans d’actions engagés. Il suit les résultats et les équilibres financiers du Groupe et décide des plans d’action à mettre en œuvre. Il réalise une revue mensuelle des résultats et des indicateurs de gestion. Le Comité de Direction Générale se réunit deux fois par mois.</p>	
+				<!--fin champs tiny-->
+							
+			</div>	<!--fin module tiny-->							
+		</div><!--fin template-->
 
 		
 	</section><!--left content-->
@@ -270,14 +189,6 @@
 			</figure>
 		</section>
 		<!-- FIN BLOC CENTRES -->
-
-		<!-- BLOC BOURSE -->
-		<section class="bloc-bourse">
-			<h1>Bourse</h1>
-			<p>Euronext (SAN) le <span id="bloc-bourse-date">08/08/2013</span> à <span id="bloc-bourse-time">12:08</span></p>
-			<p><span id="bloc-bourse-value">14,905 €</span> <span id="bloc-bourse-cote">+ 1,39 %</span></p>
-		</section>
-		<!-- FIN BLOC Bourse -->
 
 		<!-- BLOC CONTACT -->
 		<section class="bloc-contact">

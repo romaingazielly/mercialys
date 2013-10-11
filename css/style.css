@@ -112,12 +112,7 @@ div.selector select option{padding:2px 0;}
 /*--------------------------------------FIN HOME------------------------------------*/
 
 
-
-
 /*--------------------------------------PAGE INTERIEUR------------------------------------*/
-/*-------------------
-    Blocs
--------------------*/
 
 /*-------------------
     Bloc Agenda
@@ -135,7 +130,7 @@ div.selector select option{padding:2px 0;}
 .bloc-centres figure { text-align:center;  }
 .bloc-centres h1 { margin:30px 0 20px 20px; font:24px "Neuton", "georgia"; color:#262219; padding:15px 0 0 0; }
 .bloc-centres img#map-mercialys { margin:0 0 10px 0px; }
-.bloc-centres figcaption { text-align:center; margin: 0 0 20px 0; padding: 0 0 20px 0; }
+.bloc-centres figcaption { text-align:center; margin: 0 0 20px 0; padding: 0 0 17px 0; }
 .bloc-centres figcaption #map-mercialys-pointer { display:block; height:20px; width:225px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -124px 0; }
 .bloc-centres figcaption span { font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
 
@@ -157,11 +152,86 @@ div.selector select option{padding:2px 0;}
 .bloc-bourse p #bloc-bourse-cote { display:inline-block; font:700 16px "Open Sans", "Arial"; color:#9bb106; line-height:26px; margin:0 0 0 20px; vertical-align:5px; }
 
 /*-------------------
+   DIRECTION
+------------------*/
+#direction p { margin:0 0 15px 0; font-size:13px; }
+#left-content #direction blockquote { font:italic 23px "Neuton", "Arial"; }
+#left-content #direction hr{ display:block; border:none; background:#e4e4e4; height:1px; margin:30px 0 20px 0; }
+#left-content #direction .big-figure { margin:0 0 20px 0; }
+#left-content #direction .big-figure img{ display:block; }
+#left-content #direction .big-figure h2 { color:#9bb106; font:700 18px "Open Sans", "Arial"; margin:20px 0 5px 0; }
+#left-content #direction .big-figure p { color:#262219; font:600 14px "Open Sans", "Arial"; }
+#left-content #direction .people h3 { font:26px "Neuton", "Arial"; color:#262219; margin:0 0 20px 0; }
+#left-content #direction .people a { float:left; margin-right:5px; }
+#left-content #direction .people li { list-style:none; float:left; margin:20px 0px 0 0; min-width:200px;}
+#left-content #direction .people a:nth-child(3n) li { margin:20px 0 0 0; min-width:185px; }
+#left-content #direction .people li p { margin:0 0 0 0; }
+#left-content #direction .people li hr { width:30px; background:#000; margin:10px 0 0 0; }
+#left-content #direction .people li:hover { color:#9bb106;}
+#left-content #direction .people li:hover hr { background:#9bb106; }
+#left-content #direction .people.nopic a { min-width:200px; }
+#left-content #direction .people.nopic a:nth-child(even) { margin-left:100px; }
+
+/*-------------------
+   HISTORIQUE
+------------------*/
+#nav-historique{height:246px; position:relative;}
+#nav-historique.nav-fixed ul{position:fixed; top:-131px; z-index:8;	}
+#nav-historique ul li{width:199px; float:left; margin-left:1px; color:#fff;}
+#nav-historique ul li .text-nav-histo{height:86px; padding:13px 18px 0 18px;}
+#nav-historique ul li a{ display:block; color:#fff; background:#262219;}
+#left-content #nav-historique ul li a:hover .titre-histo,
+#left-content #nav-historique ul li a.selected .titre-histo{color:#262219;}
+#nav-historique ul li a:hover,
+#nav-historique ul li a.selected{color:#fff; background:#a6bc0d;}
+#left-content #nav-historique .text-nav-histo p.year{font-size:24px; margin:0; line-height:24px; margin-bottom:6px;}
+#left-content #nav-historique .text-nav-histo .titre-histo{font-size:14px; margin:0; line-height:14px;}
+#left-content .entete-historique .annee{font-size:30px;line-height:30px; font-weight:bold; margin:0; text-align:center;}
+.entete-historique h4{font-size:14px;line-height:16px;text-align:center;}
+.historique{width:600px; background:url(../images/bg-historique.gif) 297px 0 repeat-y; margin:22px 0 31px 0}
+.item-historique{width:300px;margin-bottom:29px;}
+.historique .item-historique:last-child{margin-bottom:0;}
+.item-historique.second-child{margin-top:90px;}
+.bloc-historique{width:250px; background:#fff; padding:15px 15px; float:left; opacity:0;}
+#on-left .bloc-historique{margin-left:-80px;}
+#on-right .bloc-historique{float:right; margin-right:-80px;}
+.randomclass-1 .bloc-historique{width:250px;}
+.randomclass-2 .bloc-historique{width:189px;}
+.randomclass-3 .bloc-historique{width:211px;}
+#on-left .histo-point{position:absolute;right:-12px;}
+#on-right .histo-point{position:absolute;left:-12px;}
+#on-left .histo-point .tirets{position:absolute;right:0;top:0;}
+#on-right .histo-point .tirets{position:absolute;left:0;top:0;}
+#on-left .histo-point img{position:absolute; right:-20px; width:80px; opacity:0;}
+#on-right .histo-point img{position:absolute; left:-20px; width:60px; opacity:0;}
+#on-left.randomclass-1 .histo-point{width:61px; height:24px; top:50%; margin-top:-12px;}
+#on-left.randomclass-1 .histo-point .tirets{width:61px; height:24px; background:url(../images/histo-point-l-1.png) top right no-repeat;	width:0;}
+#on-left.randomclass-1 .histo-point img{top:0;}
+#on-right.randomclass-1 .histo-point{width:61px; height:24px; top:60%;}
+#on-right.randomclass-1 .histo-point .tirets{width:61px; height:24px; background:url(../images/histo-point-r-1.png) no-repeat;width:0;}
+#on-right.randomclass-1 .histo-point img{top:0;}
+#on-left.randomclass-2 .histo-point{width:120px; height:93px; top:13%; right:-11px;}
+#on-left.randomclass-2 .histo-point .tirets{width:120px; height:93px; background:url(../images/histo-point-l-2.png) top right no-repeat; width:0;}
+#on-left.randomclass-2 .histo-point img{top:68px;}
+#on-right.randomclass-2 .histo-point{width:120px; height:69px; top:16%; left:-11px;}
+#on-right.randomclass-2 .histo-point .tirets{width:120px; height:69px; background:url(../images/histo-point-r-2.png) no-repeat; width:0;}
+#on-right.randomclass-2 .histo-point img{top:45px;}
+#on-left.randomclass-3 .histo-point{ width:102px; height:50px; top:50%; margin-top:-12px;}
+#on-left.randomclass-3 .histo-point .tirets{width:102px; height:50px; background:url(../images/histo-point-l-3.png) top right no-repeat;width:0;}
+#on-left.randomclass-3 .histo-point img{top:27px;}
+#on-right.randomclass-3 .histo-point{width:102px; height:50px; background:url(../images/histo-point-r-3.png) no-repeat;top:60%;}
+#on-right.randomclass-3 .histo-point .tirets{width:102px; height:50px; background:url(../images/histo-point-r-3.png) no-repeat; width:0;}
+#on-right.randomclass-3 .histo-point img{top:25px;}
+.bloc-historique h3{font-size:12px; color:#9bb106; text-transform:uppercase; margin-bottom:3px; font-weight:bold;}
+#left-content .bloc-historique p{font-size:12px; margin:0; line-height:17px;}
+
+/*-------------------
     Slider Actus
 -------------------*/
 #slider-actu { width:600px; overflow:hidden; }
-#slider-actu #sa-slides { width:5000px; }
-#slider-actu #sa-slides > div { width:600px; float:left; }
+#slider-actu #sa-slides { position:relative; width:5000px; height:450px; }
+#slider-actu #sa-slides > div { position:absolute; width:600px; left:600px; }
+#slider-actu #sa-slides #sa-slide1 { left:0; }
 #slider-actu #sa-slides figcaption { margin:20px 50px; }
 #slider-actu #sa-slides figcaption h1 { font:700 18px "Open Sans", "Arial"; color:#9bb106; width:390px; margin:0 0 10px 0; }
 #slider-actu #sa-slides figcaption p { font:13px "Open Sans", "Arial"; color:#262219; }
@@ -201,9 +271,42 @@ div.selector select option{padding:2px 0;}
 #actualites #actu-list li figure figcaption p { font: 13px "Open Sans", "Arial"; margin:0 20px 0 0; }
 #actualites #actu-list li figure figcaption p a { text-decoration:underline; }
 #actualites #actu-list li figure figcaption h1 { display:block; font:18px "Open Sans", "Arial"; color:#9bb106; line-height:18px; margin:8px 0 10px 0; width:500px; }
-#actualites #actu-list-pagination ul { text-align:center; margin:50px auto 0; }
-#actualites #actu-list-pagination li { display:inline-block; padding:0 3px; }
-#actualites #actu-list-pagination li a { background:#fff; padding:3px 7px; font:bold 11px "Open Sans", "Arial"; }
-#actualites #actu-list-pagination li a.active { background:#9bb106; }
-/*--------------------------------------fin INTERIEUR------------------------------------*/
+#actu-list-pagination ul { text-align:center; margin:50px auto 0; }
+#actu-list-pagination li { display:inline-block; padding:0 3px; }
+#actu-list-pagination li a { background:#fff; padding:3px 7px; font:bold 11px "Open Sans", "Arial"; }
+#actu-list-pagination li a.active, #actu-list-pagination li a:hover{ background:#9bb106; }
 
+/*---------------
+	GlOSSAIRE
+----------------*/
+.top-glossaire{background:#fff; padding:18px 0 15px 31px;}
+.top-glossaire h3{font-size:12px; color:#9bb106; text-transform:uppercase; font-weight:bold; margin-bottom:8px;}
+.top-glossaire .left-glossaire{width:272px; padding:7px 0 0 0; border-right:#e1e1e1 1px solid; float:left;}
+.top-glossaire .left-glossaire ul{width:260px;}
+.top-glossaire .left-glossaire li{float:left; margin:0 10px 8px 0; font-size:14px; text-transform:uppercase;}
+.top-glossaire .left-glossaire li a{color:#92908c;}
+.top-glossaire .left-glossaire li a:hover, .top-glossaire .left-glossaire li a.selected{color:#000000;}
+.top-glossaire .right-glossaire{width:260px; padding:7px 0 0 28px; float:left;}
+.top-glossaire .right-glossaire form{border: 1px solid #E8E8E8; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; height: 24px; padding: 0 0 0 20px; width: 239px;}
+.top-glossaire .right-glossaire #text-rech{border:none; float:left; height:22px; font-size:12px; line-height:22px; width: 167px;}
+.top-glossaire .right-glossaire #valid-rech{float: right;}
+.result-glossaire{padding:28px 0 10px 0;}
+.result-glossaire .article{padding:0 0 28px 0; margin-bottom:25px; border-bottom:1px solid #e4e4e4;}
+.result-glossaire .article:last-child{padding:0; margin-bottom:0; border-bottom:none;}
+.result-glossaire h4{color:#9bb106; font-size:18px; margin-bottom:3px;}
+.result-glossaire p{font-size:13px;}
+
+/*----------------
+	TEMPLATE classique
+------------------*/
+.template p{font-size:13px; }	
+.template .module-tiny{margin-bottom:34px; font-size:13px;}
+.template .module-tiny .big-figure{padding:27px 0;}
+.template .module-tiny .big-figure img{ display:block; }
+.template .module-tiny .figure-right{float:right; padding:0 0 24px 24px;}
+.template .module-tiny .figure-left{float:left; padding:0 24px 24px 0;}
+.template .module-tiny .quote{font:italic 22px "Neuton", "Arial"; line-height:23px;}
+.template .module-tiny h2{margin-bottom:10px; line-height:26px;}
+.template .module-tiny .link{background:#B7D00D; color: #262219; font-weight:bold; display: inline-block; font-size: 12px; line-height:16px;
+margin-top: 20px; padding: 7px 8px; text-transform: uppercase;}
+/*--------------------------------------fin INTERIEUR------------------------------------*/
