@@ -1,6 +1,11 @@
 $(function(){
 	blocCentreCo();
+	footer();
 });
+
+function footer() {
+
+}
 
 function blocCentreCo() {
 	var curr = 'red';

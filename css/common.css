@@ -100,10 +100,12 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 #footer .bottom-footer .foot-bourse #foot-bourse-value { color:#fff; }
 #footer .bottom-footer .foot-bourse #foot-bourse-cote { display:block; color:#b7d00d; font:600 12px "Open Sans", "Arial"; text-align:right; }
 #footer .bottom-footer .foot-slider { background:#332a1f; width:615px; height:50px; }
-#footer .bottom-footer .foot-slider marquee { font:600 12px "Open Sans", "Arial"; color:#fff; line-height:50px; }
-#footer .bottom-footer .foot-slider marquee p { display:inline; margin-right:600px; }
-#footer .bottom-footer .foot-slider marquee p:last-child { margin-right:0; }
-#footer .bottom-footer .foot-slider marquee span { color:#b7d00d }
+#footer .bottom-footer .foot-slider div { font:600 12px "Open Sans", "Arial"; color:#fff; margin: 0 25px; }
+#footer .bottom-footer .foot-slider div p#foot-news-container { position:relative; height:20px; margin:18px 0 0 0; overflow:hidden; }
+#footer .bottom-footer .foot-slider div p a { display:none; padding:0 0 0 100px; font: 12px "Open Sans", "Arial"; color:#fff; float:left; }
+#footer .bottom-footer .foot-slider div p a:hover { color:#b7d00d; }
+#footer .bottom-footer .foot-slider div p a:nth-child(2) {  display:block; }
+#footer .bottom-footer .foot-slider div p span { position:absolute; top:0px; color:#b7d00d; }
 #footer .bottom-footer .foot-social { padding:10px 0 0 20px; }
 #footer .foot-social li, #footer .foot-social li a { width:28px; height:28px; float:left; }
 #footer .foot-social li .foot-social-rss { background:url('../images/social-sprite.jpg') no-repeat 0 0; }
@@ -122,7 +124,4 @@ body p{font-weight:400;}
 /*-----------------2 col---------------*/
 #left-content{width:600px; float:left; padding:30px 0 0 0;}
 #right-content{width:300px; float:right; padding:15px 0 0 0;}
-
-
-
 
