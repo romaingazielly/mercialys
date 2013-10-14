@@ -5,12 +5,12 @@
 #slider-home.center-slider-home{width:1498px; margin:0 auto;}
 #slider-home #form-slider-home{position:absolute; top:0; right:0; width:466px; height:357px; padding:52px 0 0 85px; background:url(../images/fond-form-slider.png) no-repeat; z-index:3;}
 #slider-home #form-slider-home h5{font-size:16px; font-size:30px; font-family:"Neuton", georgia; color:#fff; line-height:30px; margin-bottom:18px;}
-#slider-home #form-slider-home h6{font-size:18px; line-height:18px; margin:54px 0 19px 0;}
+#slider-home #form-slider-home h6{font-size:18px; line-height:18px; font-weight:600; margin:54px 0 19px 0;}
 #slider-home #form-slider-home ul li{height:20px; line-height:20px; padding:0 0 0 31px; margin:0 0 14px 0;}
 #slider-home #form-slider-home ul li#link-form-1{background:url(../images/link-form-1.png) no-repeat;}
 #slider-home #form-slider-home ul li#link-form-2{background:url(../images/link-form-2.png) no-repeat;}
 #slider-home #form-slider-home ul li#link-form-3{background:url(../images/link-form-3.png) no-repeat;}
-#slider-home #form-slider-home ul li a{color:#fff; font-size:12px; text-transform:uppercase;}
+#slider-home #form-slider-home ul li a{color:#fff; font-size:12px; text-transform:uppercase;font-weight:700;}
 #slider-home #form-slider-home select{width:302px;}
 /*-----custom select------*/
 div.selector, div.selector span{background-image: url("../images/custom-select.png"); background-repeat: no-repeat; -webkit-font-smoothing: antialiased; }
@@ -31,7 +31,7 @@ div.selector select option{padding:2px 0;}
 .article-s-home .figure{position:absolute; top:0; left:0;}
 .article-s-home .text-slider-home{z-index:2; position:absolute; width:940px; top:98px; color:#fff; padding:0 0 0 0;}
 .article-s-home .text-slider-home h3{margin-bottom:9px; font-size:48px;color:#fff; line-height:48px; font-family:"Neuton", georgia; text-shadow: -2px 0px 21px #000;}
-.article-s-home .link-slider-home{font-size:12px; text-transform:uppercase; color:#262219; background:#b7d00d; display:inline-block;padding:10px 19px; margin-top:20px;}
+.article-s-home .link-slider-home{font-size:12px; font-weight:bold; text-transform:uppercase; color:#262219; background:#b7d00d; display:inline-block;padding:10px 19px; margin-top:20px;}
 #bullet-slider{position:absolute; z-index:3; top:60px; left:50%; margin-left:-470px;}
 #bullet-slider .point-slider{background:url(../images/bullet-slider.png) no-repeat; cursor:pointer; width:9px; height:8px; float:left; margin-right:12px;}
 #bullet-slider .point-slider.selected{background-position:0 -8px;}
@@ -44,7 +44,7 @@ div.selector select option{padding:2px 0;}
 /*-------MODULE FINANCIER------*/
 .financier .bloc-financier{float:left; width:313px;}
 .financier .content-financier{height:363px; background:#fff; position:relative;}
-.financier .link-financier{height:65px; line-height:65px; text-align:center; font-size:12px; display:block; text-transform:uppercase;}
+.financier .link-financier{height:65px; font-weight:bold; line-height:65px; text-align:center; font-size:12px; display:block; text-transform:uppercase;}
 
 /*-BOURSE-*/
 .financier .bourse{width:314px;}
@@ -59,7 +59,8 @@ div.selector select option{padding:2px 0;}
 .financier .rapport li{height:121px; padding:34px 19px 0 19px; position:relative;}
 .financier .rapport li h4{font-weight:bold; min-height:50px; line-height:18px;}
 .financier li.gris{background:#f2f2f2;}
-.financier .rapport li a.link{font-size:11px; text-transform:uppercase; background:url(../images/bg-dl.png) no-repeat; padding:0 0 0 27px;}
+.financier .rapport li .link{display:inline-block; line-height:17px;font-size:11px; text-transform:uppercase; background:url(../images/bg-dl.png) left center no-repeat; padding:0 0 0 27px;}
+.financier .rapport li .link a{text-decoration:underline;}
 .financier .rapport .link-financier{background:#b7d00d;}
 .financier .rapport .cursor{background:url(../images/cursor-gris.png) no-repeat; position:absolute; top:-8px; left:19px; width:16px; height:8px;}
 /*-AGENDA-*/
@@ -68,7 +69,8 @@ div.selector select option{padding:2px 0;}
 .financier .agenda li .date{position:absolute; left:30px; top:33px; width:48px; height:54px; background:#b7d00d;}
 .financier .agenda li .date .day{font-size:24px; line-height:24px; font-weight:bold; width:100%; text-align:center; position:absolute; top:7px; left:0;}
 .financier .agenda li .date .month{font-size:14px; line-height:14px; font-weight:bold; width:100%; text-transform:uppercase; position:absolute; top:31px; left:0; text-align:center;}
-.financier .agenda li a.link{font-size:11px; text-transform:uppercase; background:url(../images/bg-link-agenda.png) no-repeat; padding:0 0 0 27px;}
+.financier .agenda li .link{display:inline-block; line-height:17px;font-size:11px; text-transform:uppercase; background:url(../images/bg-link-agenda.png) left center no-repeat; padding:0 0 0 27px;}
+.financier .agenda li .link a{text-decoration:underline;}
 .financier .agenda .link-financier{background:#a6bc0d;}
 .financier .agenda .cursor{background:url(../images/cursor-white.png) no-repeat; position:absolute; top:-8px; left:19px; width:16px; height:8px;}
 
@@ -95,19 +97,29 @@ div.selector select option{padding:2px 0;}
 .actu-home .slide-actu-home .figure{width:235px; float:left;}
 .actu-home .slide-actu-home .figure img{display:block; width:235px;}
 .actu-home .slide-actu-home .text-slide-actu{float:left; padding:0 0 0 35px; width:300px;}
-.actu-home .text-slide-actu h4{color:#b7d00d; font-size:17px; line-height:21px; margin-bottom:16px;}
+
+.actu-home .text-slide-actu h4{color:#b7d00d; font-size:17px; line-height:21px; margin-bottom:16px; font-weight:bold;}
 .actu-home .text-slide-actu .link-parag{font-size:13px; text-decoration:underline; color:#b7d00d;}
 .actu-home .dl-link{margin-top:29px;}
 .actu-home .dl-link a{color:#fff; text-decoration:underline; background:url(../images/link-dl-white.png) left center no-repeat; font-size:11px; text-transform:uppercase; padding-left:26px;}
 .actu-home .bottom-slide-home{background:#a6bc0d; height:77px; position:relative;}
-.actu-home .bottom-slide-home a{display:block; height:77px; width:466px; background:#b7d00d; margin:0 auto; line-height:77px; text-transform:uppercase; font-size:12px; text-align:center;}
+.actu-home .bottom-slide-home a{display:block; height:77px; width:466px; background:#b7d00d; margin:0 auto; line-height:77px; text-transform:uppercase; font-size:12px; text-align:center; font-weight:bold;}
 .actu-home .btn-move{position:absolute; top:0; width:77px; height:77px; text-indent:-5000px; cursor:pointer;}
-.actu-home .btn-prev-home{background:url(../images/btn-prev-home.png) center center no-repeat; left:0;}
+.actu-home .btn-prev-home{background:url(../images/btn-prev-home.png) center center no-repeat; left:0; display:none}
 .actu-home .btn-next-home{background:url(../images/btn-next-home.png) center center no-repeat; right:0;}
-.actu-home .cursor{background:url(../images/cursor-black.png) no-repeat; width:12px; height:6px; position:absolute; top:-331px; left:19px;}
+.actu-home .cursor{background:url(../images/cursor-black.png) no-repeat; width:12px; height:6px; position:absolute; top:-330px; left:19px;}
 /*centre*/
 .actu-home .centre-home{ width:300px; float:right;  }
-.actu-home .centre-home .bloc-centres h1 { margin:0 0 14px 0; padding:5px 0 27px 20px; background:#f6f6f6; }
+.actu-home .centre-home .bloc-centres{background:none;}
+.actu-home .centre-home .bloc-centres h1 { margin:-10px 0 0 0; line-height:22px; padding:5px 80px 27px 0; height:70px; }
+.actu-home .centre-home .bloc-centres figure{background:#fff;padding-top:15px;}
+.actu-home .centre-home .bloc-centres figcaption {margin:0; padding:0 0 15px;}
+.actu-home .top-home .actu-home{padding-bottom:0;} 
+.actu-home .bloc-centres figure{position:relative;}
+.actu-home .bloc-centres .cursor {background: url("../images/cursor-white.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);top: -5px;}
+.middle-home .projet-home{padding:35px 0 10px 0;}
+.top-home .projet-home{padding:20px 0 0 0;}
+.bottom-home .financier{margin-top:-35px;}
 
 /*--------------------------------------FIN HOME------------------------------------*/
 
@@ -187,7 +199,7 @@ div.selector select option{padding:2px 0;}
 #left-content #nav-historique .text-nav-histo p.year{font-size:24px; margin:0; line-height:24px; margin-bottom:6px;}
 #left-content #nav-historique .text-nav-histo .titre-histo{font-size:14px; margin:0; line-height:14px;}
 #left-content .entete-historique .annee{font-size:30px;line-height:30px; font-weight:bold; margin:0; text-align:center;}
-.entete-historique h4{font-size:14px;line-height:16px;text-align:center;}
+.entete-historique h4{font-size:14px;line-height:16px;text-align:center; font-weight:bold;}
 .historique{width:600px; background:url(../images/bg-historique.gif) 297px 0 repeat-y; margin:22px 0 31px 0}
 .item-historique{width:300px;margin-bottom:29px;}
 .historique .item-historique:last-child{margin-bottom:0;}
@@ -276,6 +288,7 @@ div.selector select option{padding:2px 0;}
 #actu-list-pagination li a { background:#fff; padding:3px 7px; font:bold 11px "Open Sans", "Arial"; }
 #actu-list-pagination li a.active, #actu-list-pagination li a:hover{ background:#9bb106; }
 
+
 /*---------------
 	GlOSSAIRE
 ----------------*/
@@ -293,7 +306,7 @@ div.selector select option{padding:2px 0;}
 .result-glossaire{padding:28px 0 10px 0;}
 .result-glossaire .article{padding:0 0 28px 0; margin-bottom:25px; border-bottom:1px solid #e4e4e4;}
 .result-glossaire .article:last-child{padding:0; margin-bottom:0; border-bottom:none;}
-.result-glossaire h4{color:#9bb106; font-size:18px; margin-bottom:3px;}
+.result-glossaire h4{color:#9bb106; font-size:18px; margin-bottom:3px; font-weight:bold;}
 .result-glossaire p{font-size:13px;}
 
 /*----------------
@@ -301,10 +314,10 @@ div.selector select option{padding:2px 0;}
 ------------------*/
 .template p{font-size:13px; }	
 .template .module-tiny{margin-bottom:34px; font-size:13px;}
-.template .module-tiny .big-figure{padding:27px 0;}
+.template .module-tiny .big-figure{padding:0 0 27px 0;}
 .template .module-tiny .big-figure img{ display:block; }
-.template .module-tiny .figure-right{float:right; padding:0 0 24px 24px;}
-.template .module-tiny .figure-left{float:left; padding:0 24px 24px 0;}
+.template .module-tiny .figure-right{float:right; padding:0 0 15px 24px;}
+.template .module-tiny .figure-left{float:left; padding:0 24px 15px 0;}
 .template .module-tiny .quote{font:italic 22px "Neuton", "Arial"; line-height:23px;}
 .template .module-tiny h2{margin-bottom:10px; line-height:26px;}
 .template .module-tiny .link{background:#B7D00D; color: #262219; font-weight:bold; display: inline-block; font-size: 12px; line-height:16px;

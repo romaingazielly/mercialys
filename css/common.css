@@ -41,18 +41,18 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 }
-#header form #text-head{width:415px; height:32px; line-height:32px; border:none; float:left;}
+#header form #text-head{width:408px; height:31px; line-height:31px; border:none; float:left;}
 #header form #valid-head{float:right;}
 
 #header #nav-top{position:absolute; left:374px; top:0; border-top:1px solid #e7e7e7; border-left:1px solid #e7e7e7;	border-bottom:1px solid #e7e7e7;}
 #header #nav-top li{float:left; text-transform:uppercase; font-size:12px;}
-#header #nav-top li a{display:block; width:142px; height:35px; line-height:35px; border-right:1px solid #e7e7e7;}
+#header #nav-top li a{display:block; width:142px; height:35px; font-weight:600; line-height:35px; border-right:1px solid #e7e7e7;}
 #header #nav-top li#nav-top-presse a{padding-left:65px; background:url(../images/nav-top-presse.png) 39px center no-repeat;}
 #header #nav-top li#nav-top-carriere a{padding-left:54px; background:url(../images/nav-top-carriere.png) 30px center no-repeat;}
 #header #nav-top li#nav-top-contact a{padding-left:54px; background:url(../images/nav-top-contact.png) 32px center no-repeat;}
 
 #header #langue{position:absolute; right:0; top:0;}
-#header #langue a{float:left; text-transform:uppercase; font-size:12px; display:block; color:#e2e1e1; padding:0 13px; height:26px; line-height:24px; border:1px solid #e7e7e7;}
+#header #langue a{float:left; text-transform:uppercase; font-size:12px; display:block; color:#e2e1e1; padding:0 13px; height:26px; line-height:24px; border:1px solid #e7e7e7; font-weight:600}
 #header #langue a:last-child, #header #langue a:last-child:hover,
 #header #langue a:last-child.selected{border-left:none;}
 #header #langue a:hover,
@@ -61,7 +61,7 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 #header #nav-site{}
 #header #nav-site .first-level{height:48px; font-size:12px; text-transform:uppercase;}
 #header #nav-site .first-level li{float:left;}
-#header #nav-site .first-level li a{color:#fff; display:block; height:48px; line-height:48px; padding:0 20px;}
+#header #nav-site .first-level li a{color:#fff; display:block; height:48px; line-height:48px; padding:0 17px; font-weight:bold;}
 #header #nav-site .first-level li a:hover,
 #header #nav-site .first-level li a.selected{background:#b7d00d; color:#262219;}
 
@@ -112,8 +112,8 @@ header, footer, section, aside, nav, article, figure, hgroup{display:block;}
 #footer .foot-social li .foot-social-twitter { background:url('../images/social-sprite.jpg') no-repeat 0 -84px; }
 #footer .foot-social li .foot-social-facebook { background:url('../images/social-sprite.jpg') no-repeat 0 -110px; }
 /*------------------------------structure générale------------------------------*/
-body{font-size: 14px; font-family:'Open Sans', arial; color:#262219; background:#f6f6f6;}
-
+body{font-size: 14px; font-family:'Open Sans', arial; font-weight:400; color:#262219; background:#f6f6f6;}
+body p{font-weight:400;}
 
 #ariane{margin:0 0 22px 0;}
 #ariane ul li{display:inline; color:#8e8c87; font-size:11px;}
@@ -121,7 +121,7 @@ body{font-size: 14px; font-family:'Open Sans', arial; color:#262219; background:
 #ariane ul li span{color:#262219;}
 /*-----------------2 col---------------*/
 #left-content{width:600px; float:left; padding:30px 0 0 0;}
-#right-content{width:300px; float:right; padding:30px 0 0 0;}
+#right-content{width:300px; float:right; padding:15px 0 0 0;}
 
 
 
