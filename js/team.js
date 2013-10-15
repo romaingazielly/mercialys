@@ -8,10 +8,11 @@ $(function($){ 
 		//$this.off('click');
 		$this.parent().css({ 'cursor':'auto' });
 		$('.detail-cache').animate({'width':200}, 'slow');
+		$('.detail-cache hr').css({'background':'#000'}).animate({'width': '30px'});
 		$this.parents('.detail-cache').animate({ 'left':0, 'top':0 }).animate({'width':600}, 'slow');
 
 		var curId = $this.parents('.detail-cache').attr('id');
-		$('#'+curId+' hr').css({'background':'#9bb106'}).delay(1000).animate({'width': '100%'});
+		$('#'+curId+' hr').css({'background':'#9bb106'}).animate({'width': '100%'});
 		for(i=0; i<$('.detail-cache').length; i++) {
 			div = $('#tm'+i).attr('id');
 
