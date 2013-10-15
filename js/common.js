@@ -1,26 +1,12 @@
 $(function(){
 	blocCentreCo();
-	actualites();
+	footer();
 });
-function actualites() {
-	var open = false;
-	$('#actu-filtre-button').click(function(e){
-		e.preventDefault();
 
-		if(!open) {
-			$(this).css({'background-position-x': -13});
-			$('#actu-filter').animate({ 'height':290 }, 500, 'easeOutQuint', function(){
-				open = true;
-			});
-		}
-		else {
-			$(this).css({'background-position-x': 80});
-			$('#actu-filter').animate({ 'height':0 }, 500, 'easeOutQuint', function(){
-				open = false;
-			});
-		}
-	});
+function footer() {
+
 }
+
 function blocCentreCo() {
 	var curr = 'red';
 

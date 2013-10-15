@@ -8,7 +8,7 @@
 	
 	<link rel="stylesheet" href="css/common.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
@@ -18,7 +18,8 @@
 	<script src="js/bgpos.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
-	<script src="js/home.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script src="js/map.js"></script>
 </head> 
 
 <body> 
@@ -75,93 +76,99 @@
 	 	<div id="ariane">
 	 		<ul>
 	 			<li><a href="">Accueil</a> ></li>
-				<li><a href="">Nous connaitre</a> ></li>
-				<li><a href="">Gouvernance</a> ></li>
-				<li><a href="">Comité de direction</a> ></li>
-				<li><span>Marie Touraine</span></li>
+	 			<li><a href="">Finance</a> ></li>
+				<li><span>Agenda Financier</span></li>
 	 		</ul>
 	 	</div>
 
-			<h1>Comité de direction générale </h1>
+		<h1>Nos centres commerciaux</h1>
 
-
-		<div id="direction">			
-			<figure class="big-figure">
-				<img src="images/fake-photo.jpg" />
-				<h2>Marie Touraine</h2>
-				<p>Président Directeur Général</p>
-			</figure>
-			
-			<p><strong>Sous l’autorité du Directeur Général, le Comité de Direction Générale assure le pilotage opérationnel du Groupe. Il met en œuvre la stratégie du Groupe définie par le Conseil d’administration. </strong></p>
-
-			<p>Organe de réflexion stratégique, de coordination et de partage des initiatives, ainsi que de suivi des projets transversaux, il s’assure de la cohérence des plans d’actions engagés. Il suit les résultats et les équilibres financiers du Groupe et décide des plans d’action à mettre en œuvre. Il réalise une revue mensuelle des résultats et des indicateurs de gestion. Le Comité de Direction Générale se réunit deux fois par mois.</p>
-
-			<blockquote>“Donec varius nisl sed sapien convallis scelerisque. Fusce varius sed mi commodo mollis. Etiam vulputate arcu vel urna ornare, et scelerisque lacus pulvinar. Aenean purus diam, rhoncus a tempus eu, mollis sit amet dolor sit amet.”</blockquote>
-
-			<hr/>
-
-			<div class="people">
-				<h3>Les autres membres du comité</h3>
-				<ol>
-					<a href="#">
-						<li>
-							<img src="images/fake-photo-mini.jpg">
-							<p><strong>Eric Le Gentil</strong></p>
-							<p>Président Directeur Général</p>
-							<hr />
-						</li>
-					</a>
-					<a href="#">
-						<li>
-							<img src="images/fake-photo-mini.jpg">
-							<p><strong>Vincent Rebillard</strong></p>
-							<p>Directeur Général Délégué</p>
-							<hr />
-						</li>
-					</a>
-					<a href="#">
-						<li>
-							<img src="images/fake-photo-mini.jpg">
-							<p><strong>Thierry Aouizerate</strong></p>
-							<p>Directeur Général Adjoint</p>
-							<hr />
-						</li>
-					</a>
-					<a href="#">
-						<li>
-							<img src="images/fake-photo-mini.jpg">
-							<p><strong>Nicolas Faivre</strong></p>
-							<p>Directeur de la Valorisation</p>
-							<hr />
-						</li>
-					</a>
-					<a href="#">
-						<li>
-							<img src="images/fake-photo-mini.jpg">
-							<p><strong>Marie-Flore Bachelier</strong></p>
-							<p>Directrice Financière</p>
-							<hr />
-						</li>
-					</a>
-					<a href="#">
-						<li>
-							<img src="images/fake-photo-mini.jpg">
-							<p><strong>Bruno Dugas</strong></p>
-							<p>Directeur Exploitation</p>
-							<hr />
-						</li>
-					</a>
-					<a href="#">
-						<li>
-							<img src="images/fake-photo-mini.jpg">
-							<p><strong>Sandrine Abihssira</strong></p>
-							<p>Directrice Commerciale</p>
-							<hr />
-						</li>
-					</a>
-				</ol>
+		<div id="centres-commerciaux">
+			<div id="map-canvas"></div>
+			<div id="map-canvas-legend">
+					<img src="images/map-legend.png" width="148" height="21" usemap="#mercialysMap" alt="Localisation centres commerciaux Mercialys">
+					<map name="mercialysMap" id="mercialysMap">
+						<area id="map-red" shape="rect" coords="0,0,15,21" href="#" />
+						<area id="map-green" shape="rect" coords="33,0,48,21" href="#" />
+						<area id="map-yellow" shape="rect" coords="67,0,82,21" href="#" />
+						<area id="map-black" shape="rect" coords="100,0,115,21" href="#" />
+						<area id="map-grey" shape="rect" coords="133,0,148,21" href="#" />
+					</map>
+					<div id="map-mercialys-pointer"></div>
+					<span id="map-mercialys-title">Grand centre commercial</span>
 			</div>
+			<a id="actu-filtre-button" href="#">Filtrer</a>
+			<form id="actu-filter" class="clearfix">
+				<div id="af-region">
+					<p>Par région :</p>
+					<div class="select">
+						<select id="date-choice">
+						    <option value="0" selected="selected">Choisissez une région</option>
+						    <option value="auvergne">Auvergne</option>
+						    <option value="corse">Corse</option>
+						</select>
+					</div>
+				</div>
+				<div id="af-theme">
+					<p>Par type(s) de centre :</p>
+					<div>
+						<label><input type="checkbox"/> Tous (<span>45</span>)</label>
+						<label><input type="checkbox"/> Gouvernance (<span>12</span>)</label>
+						<label><input type="checkbox"/> Palmarès (<span>6</span>)</label>
+					</div>
+					
+					<div>
+						<label><input type="checkbox"/> Centres commerciaux (<span>5</span>)</label>
+						<label><input type="checkbox"/> Réalisations (<span>17</span>)</label>
+						<label><input type="checkbox"/> Projets (<span>16</span>)</label>
+					</div>
+
+					<div>
+						<label><input type="checkbox"/> Développement <br /><b>Durable</b> (<span>5</span>)</label>
+					</div>
+				</div>
+				<input value="Valider" type="submit" />
+			</form>
+			<ul id="liste-villes">
+				<li>
+					<p class="cc-ville"><span class="picto-map red"></span>Anger - 49</p>
+					<h1>Espace Anjou</h1>
+					<p class="cc-adresse">75, Avenue Montaigne <span>49 000 ANGERS</span></p>
+					<a href="#">Voir la fiche</a>
+				</li>
+				<li>
+					<p class="cc-ville"><span class="picto-map green"></span>Anger - 49</p>
+					<h1>C. Cial Géant PK3</h1>
+					<p class="cc-adresse">75, Avenue Montaigne <span>49 000 ANGERS</span></p>
+					<a href="#">Voir la fiche</a>
+				</li>
+				<li>
+					<p class="cc-ville"><span class="picto-map yellow"></span>Anger - 49</p>
+					<h1>Promenades Océanes</h1>
+					<p class="cc-adresse">Route de Talmont <span>485180 Château-d’Olonne</span></p>
+					<a href="#">Voir la fiche</a>
+				</li>
+				<li>
+					<p class="cc-ville"><span class="picto-map black"></span>Anger - 49</p>
+					<h1>Espace Anjou</h1>
+					<p class="cc-adresse">75, Avenue Montaigne <span>49 000 ANGERS</span></p>
+					<a href="#">Voir la fiche</a>
+				</li>
+				<li>
+					<p class="cc-ville"><span class="picto-map brown"></span>Anger - 49</p>
+					<h1>Promenades Océanes</h1>
+					<p class="cc-adresse">75, Avenue Montaigne <span>49 000 ANGERS</span></p>
+					<a href="#">Voir la fiche</a>
+				</li>
+				<li>
+					<p class="cc-ville"><span class="picto-map red"></span>Anger - 49</p>
+					<h1>Espace Anjou</h1>
+					<p class="cc-adresse">75, Avenue Montaigne <span>49 000 ANGERS</span></p>
+					<a href="#">Voir la fiche</a>
+				</li>
+			</ul>
 		</div>
+
 		
 	</section><!--left content-->
 	
@@ -194,26 +201,13 @@
 		</section>
 		<!-- FIN BLOC AGENDA -->
 
-		<!-- BLOC CENTRES -->
-		<section class="bloc-centres">
-			<h1>Nos centres commerciaux</h1>
-			<figure>
-				<img id="map-mercialys" src="images/map.jpg" width="266" height="282" alt="Centres commerciaux Mercialys">
-				<figcaption>
-					<img src="images/map-legend.png" width="148" height="21" usemap="#mercialysMap" alt="Localisation centres commerciaux Mercialys">
-					<map name="mercialysMap" id="mercialysMap">
-						<area id="map-red" shape="rect" coords="0,0,15,21" href="#" />
-						<area id="map-green" shape="rect" coords="33,0,48,21" href="#" />
-						<area id="map-yellow" shape="rect" coords="67,0,82,21" href="#" />
-						<area id="map-black" shape="rect" coords="100,0,115,21" href="#" />
-						<area id="map-grey" shape="rect" coords="133,0,148,21" href="#" />
-					</map>
-					<div id="map-mercialys-pointer"></div>
-					<span id="map-mercialys-title">Grand centre commercial</span>
-				</figcaption>
-			</figure>
+		<!-- BLOC BOURSE -->
+		<section class="bloc-bourse">
+			<h1>Bourse</h1>
+			<p>Euronext (SAN) le <span id="bloc-bourse-date">08/08/2013</span> à <span id="bloc-bourse-time">12:08</span></p>
+			<p><span id="bloc-bourse-value">14,905 €</span> <span id="bloc-bourse-cote">+ 1,39 %</span></p>
 		</section>
-		<!-- FIN BLOC CENTRES -->
+		<!-- FIN BLOC Bourse -->
 
 		<!-- BLOC CONTACT -->
 		<section class="bloc-contact">
@@ -307,10 +301,15 @@
 			</div>
 			<div class="foot-slider">
 				<a id="foot-slider-left" href="#"></a>
-				<marquee direction="left" scrollamount="5">
-					<p><span>Dernières actus : </span>Mercialys inaugure le centre Bois de Bersol à Bordeaux...</p>
-					<p><span>News : </span>Le nouveau site de Mercialys bientôt en ligne !</p>
-				</marquee>
+				<div>
+					<p id="foot-news-container">
+						<span>Dernières actus : </span>
+						<a id="news1" href="#">Mercialys inaugure le centre Bois de Bersol à Bordeaux...</a>
+						<a id="news2" href="#">Le nouveau site de Mercialys bientôt en ligne !</a>
+						<a id="news3" href="#">Mercialys inaugure le centre Bois de Bersol à Bordeaux...</a>
+						<a id="news4" href="#">Le nouveau site de Mercialys bientôt en ligne !</a>
+					</p>
+				</div>
 				<a id="foot-slider-right" href="#"></a>
 			</div>
 			<div class="foot-social clearfix">
