@@ -23,20 +23,20 @@ $(function($){ 
 				if(curId == 'tm0')
 					$('#'+div).animate({ 'left':0, 'top':303 });
 				else if(curId == 'tm2')
-					$('#'+div).animate({ 'left':195, 'top':303 });
+					$('#'+div).animate({ 'left':200, 'top':303 });
 				else if(curId == 'tm3')
-					$('#'+div).animate({ 'left':390, 'top':303 });
+					$('#'+div).animate({ 'left':400, 'top':303 });
 				else
 					$('#'+div).animate({ 'left':0, 'top':606 });
 			}
 			else if(div == 'tm2' && div != curId) {
 				if(curId == 'tm3')
-					$('#'+div).animate({ 'left':195, 'top':303 });
+					$('#'+div).animate({ 'left':200, 'top':303 });
 				else
-					$('#'+div).animate({ 'left':195, 'top':303 });
+					$('#'+div).animate({ 'left':200, 'top':303 });
 			}
 			else if(div == 'tm3' && div != curId) {
-				$('#'+div).animate({ 'left':390, 'top':303 });
+				$('#'+div).animate({ 'left':400, 'top':303 });
 			}
 			else if(div == 'tm4' && div != curId) {
 				$('#'+div).animate({ 'left':0, 'top':606 });
@@ -58,19 +58,19 @@ $(function($){ 
 					$('#'+div).animate({ 'left':0, 'top':0 });
 				}
 				else if( i == 1 ) {
-					$('#'+div).animate({ 'left':195, 'top':0 });
+					$('#'+div).animate({ 'left':200, 'top':0 });
 				}
 				else if( i == 2 ) {
-					$('#'+div).animate({ 'left':390, 'top':0 });
+					$('#'+div).animate({ 'left':400, 'top':0 });
 				}
 				else if( i == 3 ) {
 					$('#'+div).animate({ 'left':0, 'top':303 });
 				}
 				else if( i == 4 ) {
-					$('#'+div).animate({ 'left':195, 'top':303 });
+					$('#'+div).animate({ 'left':200, 'top':303 });
 				}
 				else if( i == 5 ) {
-					$('#'+div).animate({ 'left':390, 'top':303 });
+					$('#'+div).animate({ 'left':400, 'top':303 });
 				}
 			}
 		});
@@ -87,19 +87,19 @@ $(function($){ 
 			$('#'+div).animate({ 'left':0, 'top':0 });
 		}
 		else if( i == 1 ) {
-			$('#'+div).animate({ 'left':195, 'top':0 });
+			$('#'+div).animate({ 'left':200, 'top':0 });
 		}
 		else if( i == 2 ) {
-			$('#'+div).animate({ 'left':390, 'top':0 });
+			$('#'+div).animate({ 'left':400, 'top':0 });
 		}
 		else if( i == 3 ) {
 			$('#'+div).animate({ 'left':0, 'top':303 });
 		}
 		else if( i == 4 ) {
-			$('#'+div).animate({ 'left':195, 'top':303 });
+			$('#'+div).animate({ 'left':200, 'top':303 });
 		}
 		else if( i == 5 ) {
-			$('#'+div).animate({ 'left':390, 'top':303 });
+			$('#'+div).animate({ 'left':400, 'top':303 });
 		}
 	}
 });

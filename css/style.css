@@ -361,7 +361,7 @@ div.selector select option{padding:2px 0;}
 #nec .people .detail-left p { margin:0 0 0 0; font:13px "Open Sans", "Arial"; }
 #nec .people .detail-left p strong.green { display:block; font:700 14px "Open Sans", "Arial"; color:#9bb106; margin:4px 0; }
 #nec .people .detail-left p strong a { display:block; margin:0; text-decoration:underline; }
-#nec .people  hr { display:block;clear:left; width:30px; height:1px; border:none; background:#000; margin:10px 0 0 0; }
+#nec .people  hr { display:block; text-align:left; clear:left; width:30px; height:1px; border:none; background:#000; margin:10px 0 0 0; }
 #nec .people .detail-right { float:left; padding:0 0 0 30px; }
 #nec .people .detail-right p strong.green { display:block; float:left; font:700 18px "Open Sans", "Arial"; color:#9bb106; margin:0 0 10px 0; }
 #nec .people .detail-right p a.close { display:block; width:19px; height:19px; background:url('../images/btn-close.png') no-repeat 0 0; float:right; }
