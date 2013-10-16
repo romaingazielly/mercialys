@@ -380,6 +380,44 @@ div.selector select option{padding:2px 0;}
 #nec .people .detail-right ol li a.more { background:url('../images/more.png') 0 0 no-repeat }
 
 
+/*-------------------
+   NOS PROJETS
+------------------*/
+#projets-co article > figure { padding:15px 0 0 0; position:relative; }
+#projets-co article figure figcaption > img { position:absolute; left:20px; top:15px; z-index:2; }
+#projets-co article figure figcaption { float:right; width:100%; text-align:right; }
+#projets-co article figure figcaption a { display:inline-block; width:170px; height:35px; margin:0 0 6px 15px; }
+#projets-co article figure figcaption a#site-centre { background:url('../images/btn-site.png') no-repeat; }
+#projets-co article figure figcaption a#site-fb { background:url('../images/btn-centrefb.png') no-repeat; }
+#projets-co hr { border:none; height:1px; background:#e4e4e4; }
+#projets-co h2 { float:left; color:#262219; font:26px "Neuton", "Arial"; margin:20px 0; }
+#projets-co article #sa-slides { height:300px; background:transparent; }
+#projets-co article #sa-nav { margin:0 0 30px 0; }
+#projets-co .fiche-technique .link-container { float:right; margin:6px 0 10px 0;}
+#projets-co .fiche-technique a { display:block; margin:0 0 5px 0; }
+#projets-co .fiche-technique a.btn-dl { float:right; background:url(../images/picto-pres.png) left 10px no-repeat; line-height:18px; text-decoration:underline; text-transform:uppercase; padding:10px 0 0 25px; margin:20px 0 0 0; font:11px "Open Sans", "Arial"; }
+#projets-co .fiche-technique a.btn-arr { background:url(../images/bg-liste-magasins.png) left 0px no-repeat; line-height:18px; text-decoration:underline; text-transform:uppercase; padding:0px 0 4px 25px; font:11px "Open Sans", "Arial"; }
+#projets-co .fiche-technique table { width:100%; }
+#projets-co .fiche-technique tr { background:#fff; width:50%; height:52px; }
+#projets-co .fiche-technique tr td { vertical-align:middle; padding:0 0 0 30px; font-size:13px; }
+#projets-co .fiche-technique tr td a { text-decoration:underline; }
+#projets-co .fiche-technique tr td:nth-child(2) { width:260px; padding:0 50px 0 0; font-weight:700;  }
+#projets-co .fiche-technique tr:nth-child(even) { background:#fafced }
+#projets-co .fiche-technique a.green-btn { background:#b7d00d; height:35px; line-height:35px; padding:0 30px; text-decoration:none; font-size:12px; font-weight:700; float:left;  margin:30px 0 40px 0; text-transform:uppercase; }
+#projets-co .fiche-technique hr { clear:both; display:block; border:none; background:#e4e4e4; height:1px;  }
+#projets-co .apercu { clear:both; margin:0 0 20px 0; }
+#projets-co .apercu li { float:left; margin:0px 20px 18px 0; }
+#projets-co .apercu li:nth-child(4n-4) {  margin-right:0}
+#projets-co .apercu li:hover { background:#b7d00d; cursor:pointer; }
+#projets-co .vid { clear:both; margin:0 0 30px 0; }
+#projets-co .vid li { float:left; width:50%; }
+#projets-co .vid li p { color:#9bb106; font:700 14px "Open Sans", "Arial"; margin:0 0 10px 0; }
+
+/* Popin */
+.popin-visualizer { display:none; position:fixed; top:0; left:0; width:100%; height:2000px; background:rgba(0,0,0,.75); z-index:100; }
+.popin-visualizer div { text-align:center; }
+.popin-visualizer div img { cursor:pointer; }
+
 /*----------------
 	TEMPLATE classique
 ------------------*/
