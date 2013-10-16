@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title></title> 
+	
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>	
+	<link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bgpos.js"></script>
+	<script src="js/easing.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/agenda.js"></script>
+</head> 
+
+<body> 
+
+<header id="header">
+	<div class="top-header center">
+		<hgroup id="hgroup">
+			<h1>Mercialys</h1>
+			<h2>L'esprit voisin</h2>
+		</hgroup>
+			
+		<form id="recherche-header">
+			<p><input type="text" placeholder="Recherche..." id="text-head" /><input type="image" src="images/valid-home.png" id="valid-head" /></p>
+		</form>	
+				
+		<nav id="nav-site">	
+			<ul class="clearfix first-level">
+				<li>
+					<a href="" class="selected">Accueil</a>
+				</li>
+				<li>
+					<a href="">Nous connaître</a>
+				</li>
+				<li>
+					<a href="">Finance</a>
+				</li>
+				<li>
+					<a href="">Patrimoine & savoir-faire</a>
+				</li>
+				<li>
+					<a href="">Location d'espace temporaires</a>
+				</li>
+				<li>
+					<a href="">Nos engagements</a>
+				</li>
+			</ul>
+		</nav>		
+		
+		<ul id="nav-top">
+			<li id="nav-top-presse"><a href="">Presse</a></li>
+			<li id="nav-top-carriere"><a href="">Carrière</a></li>
+			<li id="nav-top-contact"><a href="">Contact</a></li>
+		</ul>
+		
+		<div id="langue">
+			<a href="" class="selected">FR</a>
+			<a href="">EN</a>
+		</div>
+	</div>
+</header>
+
+<section class="content center clearfix">
+	<section id="left-content">
+	 	<div id="ariane">
+	 		<ul>
+	 			<li><a href="">Accueil</a> ></li>
+				<li><a href="">Nous connaitre</a> ></li>
+				<li><a href="">Gouvernance</a> ></li>
+				<li><a href="">Comité de direction</a> ></li>
+				<li><span>Marie Touraine</span></li>
+	 		</ul>
+	 	</div>
+				
+			<h1>Agenda financier</h1>
+		
+		<div id="agenda">	
+			<p><strong>Cras ornare consequat ante, sit amet eleifend turpis aliquam in. Mauris nulla lacus, dapibus eu gravida a, egestas in risus.</strong><br />
+			Mauris non diam commodo, ullamcorper purus nec, feugiat erat. Nunc in erat consectetur, pharetra purus in, adipiscing erat. Nullam ultrices est ut magna blandit auctor.
+			</p>
+			
+			<div class="tri">
+				<h6 class="titre-tri">Trier par</h6>
+					<a href="" class="link-avenir">Evènements<br /><strong>à venir</strong></a>
+					<a href="" class="link-passe selected">Evènements<br /><strong>passés</strong></a>
+					<div class="slider-tri"><div class="cursor-tri"></div></div>
+			</div>
+			
+			<h2>Evènements passés</h2>
+			
+			<article class="event-agenda clearfix">
+				<p class="date"><span class="day">24</span> <span class="month">juil</span></p>
+				<div class="content-event">
+					<h3>Assemblée générale annuelle des actionnaires</h3>
+					<ul class="clearfix">
+						<li class="picto-event"><a href="">voir la fiche de l’évènement</a></li>
+					</ul>
+				</div>
+			</article>
+			<article class="event-agenda clearfix">
+				<p class="date"><span class="day">24</span> <span class="month">juil</span></p>
+				<div class="content-event">
+					<h3>Assemblée générale annuelle des actionnaires</h3>
+					<ul class="clearfix">
+						<li class="picto-event"><a href="">voir la fiche de l’évènement</a></li>
+					</ul>
+				</div>
+			</article>	
+			<article class="event-agenda clearfix">
+				<p class="date"><span class="day">24</span> <span class="month">juil</span></p>
+				<div class="content-event">
+					<h3>Assemblée générale annuelle des actionnaires</h3>
+					<ul class="clearfix">
+						<li class="picto-event"><a href="">voir la fiche de l’évènement</a></li>
+					</ul>
+				</div>
+			</article>		
+		</div><!--fin agenda-->
+		
+	</section><!--left content-->
+	
+	<aside id="right-content">
+
+		<!-- BLOC BOURSE -->
+		<section class="bloc-bourse">
+			<h1>Bourse</h1>
+			<p>Euronext (SAN) le <span id="bloc-bourse-date">08/08/2013</span> à <span id="bloc-bourse-time">12:08</span></p>
+			<p><span id="bloc-bourse-value">14,905 €</span> <span id="bloc-bourse-cote">+ 1,39 %</span></p>
+		</section>
+		<!-- FIN BLOC Bourse -->
+
+		<!-- BLOC CENTRES -->
+		<section class="bloc-centres">
+			<h1>Nos centres commerciaux</h1>
+			<figure>
+				<img id="map-mercialys" src="images/map.jpg" width="266" height="282" alt="Centres commerciaux Mercialys">
+				<figcaption>
+					<img src="images/map-legend.png" width="148" height="21" usemap="#mercialysMap" alt="Localisation centres commerciaux Mercialys">
+					<map name="mercialysMap" id="mercialysMap">
+						<area id="map-red" shape="rect" coords="0,0,15,21" href="#" />
+						<area id="map-green" shape="rect" coords="33,0,48,21" href="#" />
+						<area id="map-yellow" shape="rect" coords="67,0,82,21" href="#" />
+						<area id="map-black" shape="rect" coords="100,0,115,21" href="#" />
+						<area id="map-grey" shape="rect" coords="133,0,148,21" href="#" />
+					</map>
+					<div id="map-mercialys-pointer"></div>
+					<span id="map-mercialys-title">Grand centre commercial</span>
+				</figcaption>
+			</figure>
+		</section>
+		<!-- FIN BLOC CENTRES -->
+
+		<!-- BLOC CONTACT -->
+		<section class="bloc-contact">
+			<h1>Nous contacter</h1>
+			<p><strong>MERCIALYS</strong><br/>
+			148, rue de l'université<br/>
+			75007 PARIS<br/>
+			Téléphone : 01 53 70 23 30<br/>
+			Fax : 01 53 65 24 74</p>
+			<a href="#" class="bloc-contact-button">Utiliser le formulaire de contact</a>
+		</section>
+		<!-- FIN BLOC CONTACT -->
+
+	</aside><!--fin right content-->
+</section><!--fin content-->
+
+			
+<section id="social-bottom" class="clearfix">
+	<div class="center">
+		<ul>
+			<li id="sb-linkedin">
+				<a href="">Notre linkedin</a>
+			</li>
+			<li id="sb-viadeo">
+				<a href="">Notre Viadeo</a>
+			</li>
+			<li id="sb-twitter">
+				<a href="">Notre Twitter</a>
+			</li>
+			<li id="sb-facebook">
+				<p class="titre-social">Notre Facebook</p>
+				<a href="">Facebook</a>
+			</li>
+		</ul>
+	<div class="oiseaux"></div>	
+	</div>
+</section><!--fin social bottom-->
+
+<footer id="footer">
+	<div class="bg-pinces"></div>
+	<div class="center top-footer clearfix">
+		<div class="top-footer-left clearfix">
+			<ol>
+				<li class="title">Investisseurs / financiers</li>
+				<li><a href="#">Agenda financier</a></li>
+				<li><a href="#">Publications de résultats</a></li>
+				<li><a href="#">Rapports annuels et documents de référence</a></li>
+			</ol>
+			<ol>
+				<li class="title">Enseignes / commerçants</li>
+				<li><a href="#">Nos centres commerciaux</a></li>
+				<li><a href="#">Nos projets</a></li>
+				<li><a href="#">Notre équipe commerciale</a></li>
+			</ol>
+		</div>
+		
+		<div class="top-footer-middle clearfix">
+			<ol>
+				<li class="title">Commerçant éphémère</li>
+				<li><a href="#">Notre offre de locations d’espaces temporaires</a></li>
+				<li><a href="#">Contacts espaces temporaires</a></li>
+			</ol>
+			<ol>
+				<li class="title">Espace presse</li>
+				<li><a href="#">Communiqués de presse</a></li>
+				<li><a href="#">Contact presse</a></li>
+			</ol>
+		</div>
+		
+		<div class="top-footer-right clearfix">
+			<ol>
+				<li class="title">Site Mercialys</li>
+				<li><a href="#">Notre activité</a></li>
+				<li><a href="#">Archives</a></li>
+				<li><a href="#">Plan du site</a></li>
+				<li><a href="#">Mentions légales</a></li>
+				<li><a href="#">Informations cookies</a></li>
+				<li><a href="#">Contactez-nous</a></li>
+			</ol>
+		</div>
+	</div>
+	
+	<div class="bottom-footer clearfix">
+		<div class="center">
+			<div class="foot-bourse">
+				<p>Euronext <br />(SAN)</p>
+				<div>
+					<span id="foot-bourse-value">14,905</span>€
+					<span id="foot-bourse-cote">+ 1,39 %</span>
+				</div>
+			</div>
+			<div class="foot-slider">
+				<a id="foot-slider-left" href="#"></a>
+				<marquee direction="left" scrollamount="5">
+					<p><span>Dernières actus : </span>Mercialys inaugure le centre Bois de Bersol à Bordeaux...</p>
+					<p><span>News : </span>Le nouveau site de Mercialys bientôt en ligne !</p>
+				</marquee>
+				<a id="foot-slider-right" href="#"></a>
+			</div>
+			<div class="foot-social clearfix">
+				<ul>
+					<li><a class="foot-social-rss" href="#"></a></li>
+					<li><a class="foot-social-linkedin" href="#"></a></li>
+					<li><a class="foot-social-viadeo" href="#"></a></li>
+					<li><a class="foot-social-twitter" href="#"></a></li>
+					<li><a class="foot-social-facebook" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

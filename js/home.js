@@ -22,7 +22,7 @@ $(function(){
 /*resize du slide*/
 function resizeSlide(){
 	windowWidth = $(window).width();
-	if(windowWidth > 1498){
+	/*if(windowWidth > 1498){
 		widthSlide = 1101;
 		$('.text-slider-home').css({left:279});
 		$('#slider-home').addClass('center-slider-home');
@@ -31,7 +31,17 @@ function resizeSlide(){
 		widthSlide = windowWidth - 397;
 		$('.text-slider-home').css({left:(windowWidth-940)/2})	
 		$('#slider-home').removeClass('center-slider-home');
+	}*/
+	if(windowWidth > 1498){
+		$('.article-s-home .figure').addClass('full-img');
 	}
+	else{
+		$('.article-s-home .figure').removeClass('full-img');
+	}
+	
+	widthSlide = windowWidth - 397;
+	$('.text-slider-home').css({left:(windowWidth-940)/2})	
+	$('#slider-home').removeClass('center-slider-home');
 	
 	$('#my-slider-home, .article-s-home').css({width:widthSlide});
 	$('#slider-move-home').css({left: -widthSlide*stepSlider});

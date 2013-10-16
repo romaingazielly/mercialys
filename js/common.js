@@ -1,10 +1,27 @@
 $(function(){
 	blocCentreCo();
-	footer();
+	btnScrollTop();
 });
 
-function footer() {
 
+/*-----------bouton retour haut---------*/
+function btnScrollTop(){
+ 	var docHeight = $(document).height();
+ 
+ 	$('body').append('<div class="btn-return-top"></div>');	
+ 	
+ 	$(".btn-return-top").on("click", function(e){ 	
+		$('body, html').animate({scrollTop : 0},'slow');
+		e.preventDefault(); 	 
+ 	}); 	
+ 	
+ 		var docScroll = $(document).scrollTop();
+  		if(docScroll > 200){
+  			$('.btn-return-top').fadeIn();	
+  		}
+  		else{
+  			$('.btn-return-top').fadeOut();
+  		}
 }
 
 function blocCentreCo() {
