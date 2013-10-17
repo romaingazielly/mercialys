@@ -20,6 +20,8 @@ function initSlider() {
 	$('#sa-nav-slide a').on('click', function(e){
 		e.preventDefault();
 
+		window.clearInterval(autoPlay);
+
 		slideCurrentId = 'sa-slide'+currentSlideNumber;
 
 		if(allowClick) {

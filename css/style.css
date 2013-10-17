@@ -245,7 +245,7 @@ div.selector select option{padding:2px 0;}
 #slider-actu { width:600px; overflow:hidden; }
 #slider-actu #sa-slides { position:relative; width:5000px; height:450px; background:#fff; }
 #slider-actu #sa-slides > div { position:absolute; width:600px; left:600px; }
-#slider-actu #sa-slides #sa-slide1 { left:0; }
+#slider-actu #sa-slides #sa-slide1, #slider-actu #sa-slides #sa-slide11 { left:0; }
 #slider-actu #sa-slides figcaption { margin:20px 30px; }
 #slider-actu #sa-slides figcaption h1 { font:700 18px "Open Sans", "Arial"; color:#9bb106; width:390px; margin:0 0 10px 0; }
 #slider-actu #sa-slides figcaption p { font:13px "Open Sans", "Arial"; color:#262219; }
@@ -262,7 +262,7 @@ div.selector select option{padding:2px 0;}
 #actualites #actualites-all { margin:50px 0 0 0; }
 #actualites #actualites-all h1 { font:26px "Neuton", "georgia"; display:inline; }
 #actualites #actualites-all a#actu-filtre-button { vertical-align:3px; float:right; padding:10px 40px 15px 20px; text-transform:uppercase; background:#fff url('../images/filtre-arr.gif') no-repeat 80px 18px;; }
-#actualites #actualites-all #actu-filter { background:#fff; margin-top:15px; height:0; overflow:hidden; }
+#actualites #actualites-all #actu-filter { background:#fff; margin-top:15px; }
 #actualites #actualites-all #actu-filter p { color:#9bb106; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; padding:25px 30px 10px 30px; }
 #actualites #actualites-all #actu-filter .select select { display:block; float:left; background: transparent; width: 200px; padding:0px 0 10px 10px; font:500 12px "Open Sans"; border: 0; border-radius: 0; height: 35px; color:#717171; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor:pointer; }
 #actualites #actualites-all #actu-filter .select { margin:0 0 0 30px; float:left;  width:180px; height: 26px; overflow: hidden; background: url('../images/select-arr.png') no-repeat 100% center #fff; border: 1px solid #e0e0e0; border-radius:15px; border-right:none; }
@@ -317,25 +317,24 @@ div.selector select option{padding:2px 0;}
 ----------------*/
 #centres-commerciaux { position:relative; }
 #centres-commerciaux #map-canvas { height:550px; }
-#centres-commerciaux #map-canvas-legend { position:absolute; top:470px; left:20px; background:#fff; width:295px; height:105px; text-align:center; padding:15px 0 0px 0; }
-#centres-commerciaux #map-canvas-legend #map-mercialys-pointer { display:block; height:20px; width:225px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -124px 0; }
+#centres-commerciaux #map-canvas-legend { position:relative; margin:-60px 0 0 20px; background:#fff; width:250px; height:150px; text-align:center; padding:20px 0 0px 0; }
+#centres-commerciaux #map-canvas-legend p { color:#9bb106; text-transform:uppercase; font:700 12px "Open Sans", "Arial"; margin:0 0 15px 0; }
+#centres-commerciaux #map-canvas-legend #map-mercialys-pointer { display:block; height:20px; width:190px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -159px 0; }
 #centres-commerciaux #map-canvas-legend span { font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
-#centres-commerciaux #actu-filtre-button { vertical-align:3px; float:right; padding:10px 40px 15px 20px; text-transform:uppercase; background:#fff url('../images/filtre-arr.gif') no-repeat 80px 18px; margin:20px 0 0 0;; }
-#centres-commerciaux #actu-filter { display:block; width:600px; background:#fff; margin-top:15px; height:0px; overflow:hidden; }
-#centres-commerciaux #actu-filter p { color:#9bb106; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; padding:25px 30px 10px 30px; }
-#centres-commerciaux #actu-filter .select select { display:block; float:left; background: transparent; width: 200px; padding:0px 0 10px 10px; font:500 12px "Open Sans"; border: 0; border-radius: 0; height: 35px; color:#717171; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor:pointer; }
-#centres-commerciaux #actu-filter .select { margin:0 0 0 30px; float:left;  width:180px; height: 26px; overflow: hidden; background: url('../images/select-arr.png') no-repeat 100% center #fff; border: 1px solid #e0e0e0; border-radius:15px; border-right:none; }
-#centres-commerciaux #actu-filter input { margin:0 0 0 30px; }
-#centres-commerciaux #actu-filter #af-region, #actu-filter #af-keywords { float:left; width:200px; width:50%; }
-#centres-commerciaux #actu-filter #af-keywords input { padding:3px 30px 3px 10px; border:solid 1px #ebebeb; border-radius:15px; width:205px; background:#fff url('../images/zoom.gif') no-repeat 180px center; }
-#centres-commerciaux #actu-filter #af-theme { clear:left; }
-#centres-commerciaux #actu-filter #af-theme div { margin:0; display:inline-block; vertical-align:top; }
-#centres-commerciaux #actu-filter #af-theme input { margin:0 5px 0 30px; }
-#centres-commerciaux #actu-filter #af-theme div label { display:block;  margin:0 0 5px 0; }
-#centres-commerciaux #actu-filter #af-theme div label b { font-weight:normal; padding-left:51px; }
-#centres-commerciaux #actu-filter input[type="submit"] { margin:20px 0 30px 460px; background:#b7d00d; border:none; padding:10px 20px; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; }
-#centres-commerciaux #liste-villes { margin:20px 0 0 0; }
-#centres-commerciaux #liste-villes li { float:left; padding:30px 0 30px 0; border-bottom:solid 1px #e4e4e4; margin:0 0 0 20px; width:280px; }
+#centres-commerciaux #map-canvas-legend-big { position:relative; }
+#centres-commerciaux #map-canvas-legend-big h2 { position:absolute; top:-47px; padding:15px 30px 15px 30px; text-transform:uppercase; background:#fff; margin:0px 0 0 25px; font:600 12px "Open Sans", "Arial"; }
+#centres-commerciaux #map-canvas-legend-big > div { margin:0; background:#fff; width:600px; }
+#centres-commerciaux #map-canvas-legend-big .left { clear:left; width:42%; padding:30px 0px 30px 55px; }
+#centres-commerciaux #map-canvas-legend-big .right { width:58%; padding:30px 0px 0 0; vertical-align:top; }
+#centres-commerciaux #map-canvas-legend-big p { color:#9bb106; text-transform:uppercase; font:700 12px "Open Sans", "Arial"; margin:0 0 15px 0; }
+#centres-commerciaux #map-canvas-legend-big .left img { margin-left:8px; }
+#centres-commerciaux #map-canvas-legend-big #map-mercialys-pointer { display:block; height:20px; width:190px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -159px 0; }
+#centres-commerciaux #map-canvas-legend-big span { font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
+#centres-commerciaux #actu-filter p { color:#9bb106; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; padding:0px 30px 0px 60px; }
+#centres-commerciaux #actu-filter .select select { display:block; float:left; background: transparent; width: 270px; padding:0px 0 10px 10px; font:500 12px "Open Sans"; border: 0; border-radius: 0; height: 35px; color:#717171; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor:pointer; }
+#centres-commerciaux #actu-filter .select { margin:0 0 0 60px; float:left; width:250px; height: 26px; overflow: hidden; background: url('../images/select-arr.png') no-repeat 100% center #fff; border: 1px solid #e0e0e0; border-radius:15px; border-right:none; }
+#centres-commerciaux #actu-filter input[type="submit"] { clear:both; display:block; float:right; margin:35px 50px 30px 0px; background:#b7d00d; border:none; padding:10px 30px; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; }
+#centres-commerciaux #liste-villes li { float:left; padding: 30px 0 20px 0; border-bottom:solid 1px #e4e4e4; margin:0 0 0 20px; width:280px; }
 #centres-commerciaux #liste-villes li:last-child, #centres-commerciaux #liste-villes li:nth-last-child(2) { border-color:#f6f6f6; }
 #centres-commerciaux #liste-villes .cc-ville { color:#262219; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; }
 #centres-commerciaux #liste-villes .cc-ville .picto-map { background:url('../images/map-legend.png') no-repeat; display:block; width:25px; height:20px; float:left; }
@@ -396,6 +395,7 @@ div.selector select option{padding:2px 0;}
 #projets-co .fiche-technique .link-container { float:right; margin:6px 0 10px 0;}
 #projets-co .fiche-technique a { display:block; margin:0 0 5px 0; }
 #projets-co .fiche-technique a.btn-dl { float:right; background:url(../images/picto-pres.png) left 10px no-repeat; line-height:18px; text-decoration:underline; text-transform:uppercase; padding:10px 0 0 25px; margin:20px 0 0 0; font:11px "Open Sans", "Arial"; }
+#projets-co .fiche-technique a.btn-dl.btn-center { margin:30px 0 0 0; }  
 #projets-co .fiche-technique a.btn-arr { background:url(../images/bg-liste-magasins.png) left 0px no-repeat; line-height:18px; text-decoration:underline; text-transform:uppercase; padding:0px 0 4px 25px; font:11px "Open Sans", "Arial"; }
 #projets-co .fiche-technique table { width:100%; }
 #projets-co .fiche-technique tr { background:#fff; width:50%; height:52px; }

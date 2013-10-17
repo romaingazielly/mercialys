@@ -51,7 +51,7 @@ function blocCentreCo() {
 		e.preventDefault();
 
 		if(curr != 'red') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-124px'});
+			$('#map-mercialys-pointer').animate({backgroundPositionX: '-159px'});
 			$('#map-mercialys-title').fadeOut('fast', function(){
 				$(this).html('Grande surface spécialisée').css({'color':'#b60d1c'}).fadeIn();
 				curr = 'red';
@@ -63,7 +63,7 @@ function blocCentreCo() {
 		e.preventDefault();
 
 		if(curr != 'green') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-91px'});
+			$('#map-mercialys-pointer').animate({backgroundPositionX: '-126px'});
 			$('#map-mercialys-title').fadeOut('fast', function(){
 				$(this).html('Centre local de Proximité').css({'color':'#b7d00d'}).fadeIn();
 				curr = 'green';
@@ -75,7 +75,7 @@ function blocCentreCo() {
 		e.preventDefault();
 
 		if(curr != 'yellow') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-57px'});
+			$('#map-mercialys-pointer').animate({backgroundPositionX: '-92px'});
 			$('#map-mercialys-title').fadeOut('fast', function(){
 				$(this).html('Surface alimentaire').css({'color':'#e7c22c'}).fadeIn();
 				curr = 'yellow';
@@ -87,7 +87,7 @@ function blocCentreCo() {
 		e.preventDefault();
 
 		if(curr != 'black') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-24px'});
+			$('#map-mercialys-pointer').animate({backgroundPositionX: '-59px'});
 			$('#map-mercialys-title').fadeOut('fast', function(){
 				$(this).html('Grand centre régional').css({'color':'#262219'}).fadeIn();
 				curr = 'black';
@@ -99,10 +99,22 @@ function blocCentreCo() {
 		e.preventDefault();
 
 		if(curr != 'grey') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '9px'});
+			$('#map-mercialys-pointer').animate({backgroundPositionX: '-26px'});
 			$('#map-mercialys-title').fadeOut('fast', function(){
 				$(this).html('Grand centre commercial').css({'color':'#5e5238'}).fadeIn();
 				curr = 'grey';
+			});
+		}
+	});
+
+	$('#map-blue').click(function(e){
+		e.preventDefault();
+
+		if(curr != 'blue') {
+			$('#map-mercialys-pointer').animate({backgroundPositionX: '7px'});
+			$('#map-mercialys-title').fadeOut('fast', function(){
+				$(this).html('Centre détenu en partenariat').css({'color':'#575bbb'}).fadeIn();
+				curr = 'blue';
 			});
 		}
 	});
