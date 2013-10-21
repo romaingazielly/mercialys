@@ -16,22 +16,70 @@ $(function(){
 	resizeSlide();
 	initSlider();
 	$('#form-slider-home select').uniform();
+	sousMenu();
+	
+	$('.btn-move').hover(function(){
+		$(this).find('span').stop().animate({ backgroundPositionY: -19 }, 200);
+	}, function(){
+		$(this).find('span').stop().animate({ backgroundPositionY: 0 }, 200);
+	});
 });
+/*------SOUS MENU HOME--------------*/
+var elemMenu;
+var isSousMenu = false;
+var myTarget;
+var myTargetId;
+function sousMenu(){
+	$(document).on({
+		mouseenter: function(e){
+				myTarget = $( e.target );
+				myTargetId = myTarget.parent().attr('id').substring('10');
+				if(myTargetId > 0){
+					$('.thisisdesktop #second-nav-'+myTargetId).css({display:'block'});
+					$('.thisisdesktop #second-nav').slideDown();
+
+					$('.thisisdesktop #first-nav li').hover(function(){
+						$('.thisisdesktop .second-nav-item').css({display:'none'});
+
+						myTargetId = $(this).attr('id').substring('10');
+						if(myTargetId == 0){
+							$('.thisisdesktop .second-nav-item, #second-nav').slideUp();
+						}
+						else{
+							$('.thisisdesktop #second-nav-'+myTargetId).css({display:'block'});
+							$('.thisisdesktop #second-nav').slideDown();
+						}
+					});					
+				}
+				else{
+					$('.thisisdesktop #second-nav-'+myTargetId).css({display:'block'});
+
+					$('.thisisdesktop #first-nav li').hover(function(){
+						$('.thisisdesktop .second-nav-item').css({display:'none'});
+
+						myTargetId = $(this).attr('id').substring('10');
+						if(myTargetId == 0){
+							$('.thisisdesktop .second-nav-item,.thisisdesktop  #second-nav').slideUp();
+						}
+						else{
+							$('.thisisdesktop #second-nav-'+myTargetId).css({display:'block'});
+							$('.thisisdesktop #second-nav').slideDown();
+						}
+					});					
+				}
+		}, 
+		mouseleave: function(e){
+			$('.thisisdesktop #second-nav').slideUp();
+		}
+	}, '.thisisdesktop #nav-first-level');
+}
+
+
 /*------SLIDER TOP HOME-------------*/
 
 /*resize du slide*/
 function resizeSlide(){
 	windowWidth = $(window).width();
-	/*if(windowWidth > 1498){
-		widthSlide = 1101;
-		$('.text-slider-home').css({left:279});
-		$('#slider-home').addClass('center-slider-home');
-	}
-	else{
-		widthSlide = windowWidth - 397;
-		$('.text-slider-home').css({left:(windowWidth-940)/2})	
-		$('#slider-home').removeClass('center-slider-home');
-	}*/
 	if(windowWidth > 1498){
 		$('.article-s-home .figure').addClass('full-img');
 	}
