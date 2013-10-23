@@ -9,6 +9,7 @@ $(function(){
 	blocCentreCo();
 	btnScrollTop();
 	sliderFoot();
+	enSavoirPlus();
 	
 	$('.people ol a').hover(function(){
 		$(this).find('hr').stop().animate({width:185});
@@ -111,82 +112,38 @@ function start_Foota(){
 
 /*------MAP---*/
 function blocCentreCo() {
-	var curr = 'red';
+	var curr = 0;
+	var clikOk = true;
 
-	$('#map-red').click(function(e){
+	$('#mercialysMap area').click(function(e){
 		e.preventDefault();
 
-		if(curr != 'red') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-124px'});
-			$('#map-mercialys-title').fadeOut('fast', function(){
-				$(this).html('Grande surface spécialisée').css({'color':'#b60d1c'}).fadeIn();
-				curr = 'red';
-			});
-		}
-	});
+		if(clikOk) {
+			clikOk = false;
+			var $this = $(this);
+			var id = $this.attr('id').substr(4);
+			var pos = $this.attr('rel');
 
-	$('#map-green').click(function(e){
-		e.preventDefault();
-
-		if(curr != 'green') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-91px'});
-			$('#map-mercialys-title').fadeOut('fast', function(){
-				$(this).html('Centre local de Proximité').css({'color':'#b7d00d'}).fadeIn();
-				curr = 'green';
-			});
-		}
-	});
-
-	$('#map-yellow').click(function(e){
-		e.preventDefault();
-
-		if(curr != 'yellow') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-57px'});
-			$('#map-mercialys-title').fadeOut('fast', function(){
-				$(this).html('Surface alimentaire').css({'color':'#e7c22c'}).fadeIn();
-				curr = 'yellow';
-			});
-		}
-	});
-
-	$('#map-black').click(function(e){
-		e.preventDefault();
-
-		if(curr != 'black') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '-24px'});
-			$('#map-mercialys-title').fadeOut('fast', function(){
-				$(this).html('Grand centre régional').css({'color':'#262219'}).fadeIn();
-				curr = 'black';
-			});
-		}
-	});
-
-	$('#map-grey').click(function(e){
-		e.preventDefault();
-
-		if(curr != 'grey') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '9px'});
-			$('#map-mercialys-title').fadeOut('fast', function(){
-				$(this).html('Grand centre commercial').css({'color':'#5e5238'}).fadeIn();
-				curr = 'grey';
-			});
-		}
-	});
-	
-	$('#map-blue').click(function(e){
-		e.preventDefault();
-
-		if(curr != 'blue') {
-			$('#map-mercialys-pointer').animate({backgroundPositionX: '7px'});
-			$('#map-mercialys-title').fadeOut('fast', function(){
-				$(this).html('Centre détenu en partenariat').css({'color':'#575bbb'}).fadeIn();
-				curr = 'blue';
-			});
+			if(curr != id) {
+				$('#map-mercialys-pointer').animate({backgroundPositionX: pos});
+				$('#legend-'+curr).fadeOut('fast', function(){
+					$('#legend-'+id).fadeIn();
+					curr = id;
+				});
+			}
+			clikOk = true;
 		}
 	});
 }
 
 
+/*-----------POPIN--------------*/
+function enSavoirPlus() {
+	$('.enSavoirPlus').on('click', function(e){
+		e.preventDefault();
+		
+	});
+}
 
 /*-----------MENU MOBILE--------------*/
 var menu;

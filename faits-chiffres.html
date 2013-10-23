@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/style.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Neuton:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/shadowbox.css">
 	<!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
@@ -18,8 +19,12 @@
 	<script src="js/bgpos.js"></script>
 	<script src="js/easing.js"></script>
 	<script src="js/common.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	<script src="js/map.js"></script>
+	<script type="text/javascript" src="js/shadowbox.js"></script>
+	<script type="text/javascript">
+		Shadowbox.init({
+			andleOversize:     "drag"
+		});
+	</script>
 </head> 
 
 <body> 
@@ -147,10 +152,10 @@
 		<div class="faitsetchiffres">
 			<p>En 2012, Mercialys affiche encore une fois une excellente performance opérationnelle <br />et financière démontrant à nouveau la pertinence <br />et la solidité de son modèle économique.</p>
 			<img src="images/infographie.jpg" alt="Mercialys, faits et chiffres clés">
-			<a href="#" id="if-sites"></a>
-			<a href="#" id="if-resultat"></a>
-			<a href="#" id="if-ebidta"></a>
-			<a href="#" id="if-locatifs"></a>
+			<a class="enSavoirPlus" href="images/graph.png" rel="shadowbox" id="if-sites"></a>
+			<a class="enSavoirPlus" href="images/graph.png" rel="shadowbox" id="if-resultat"></a>
+			<a class="enSavoirPlus" href="images/graph.png" rel="shadowbox" id="if-ebidta"></a>
+			<a class="enSavoirPlus" href="images/graph.png" rel="shadowbox" id="if-locatifs"></a>
 		</div>
 
 		
@@ -256,6 +261,12 @@
 		</div>
 	</div>
 </footer>
-
+<!--**********************POPIN********************-->
+<section class="popin-visualizer">
+    <div class="graph">
+        
+    </div>           
+</section>
+<!--************************FIN POPIN***************-->	
 </body>
 </html>

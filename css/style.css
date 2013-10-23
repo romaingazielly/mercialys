@@ -346,6 +346,8 @@ height:70px; font:24px "Neuton", "georgia"; color:#262219; line-height:24px;}
 .faitsetchiffres a#if-resultat { top:703px; left:263px; }
 .faitsetchiffres a#if-ebidta { top:880px; left:171px; }
 .faitsetchiffres a#if-locatifs { top:877px; left:748px; }
+.graph { width:600px; min-height:400px; background:#fff; }
+
 /*---------------
 	GlOSSAIRE
 ----------------*/
@@ -371,7 +373,7 @@ height:70px; font:24px "Neuton", "georgia"; color:#262219; line-height:24px;}
 	CENTRES COMMERCIAUX
 ----------------*/
 #centres-commerciaux { position:relative; }
-#centres-commerciaux #map-canvas { height:550px; }
+#centres-commerciaux #map-canvas { height:600px; }
 #centres-commerciaux #map-canvas-legend { position:relative; margin:-60px 0 0 20px; background:#fff; width:250px; height:150px; text-align:center; padding:20px 0 0px 0; }
 #centres-commerciaux #map-canvas-legend p { color:#9bb106; text-transform:uppercase; font:700 12px "Open Sans", "Arial"; margin:0 0 15px 0; }
 #centres-commerciaux #map-canvas-legend #map-mercialys-pointer { display:block; height:20px; width:190px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -159px 0; }
@@ -379,12 +381,18 @@ height:70px; font:24px "Neuton", "georgia"; color:#262219; line-height:24px;}
 #centres-commerciaux #map-canvas-legend-big { position:relative; }
 #centres-commerciaux #map-canvas-legend-big h2 { position:absolute; top:-47px; padding:15px 30px 15px 30px; text-transform:uppercase; background:#fff; margin:0px 0 0 25px; font:600 12px "Open Sans", "Arial"; }
 #centres-commerciaux #map-canvas-legend-big > div { margin:0; background:#fff; width:600px; }
-#centres-commerciaux #map-canvas-legend-big .left { clear:left; width:42%; padding:30px 0px 30px 55px; }
+#centres-commerciaux #map-canvas-legend-big .left { clear:left; width:42%; padding:30px 0px 30px 55px; text-align:center; }
 #centres-commerciaux #map-canvas-legend-big .right { width:58%; padding:30px 0px 0 0; vertical-align:top; }
-#centres-commerciaux #map-canvas-legend-big p { color:#9bb106; text-transform:uppercase; font:700 12px "Open Sans", "Arial"; margin:0 0 15px 0; }
+#centres-commerciaux #map-canvas-legend-big p { color:#9bb106; text-transform:uppercase; font:700 12px "Open Sans", "Arial"; margin:0 0 15px 0; text-align:left; }
 #centres-commerciaux #map-canvas-legend-big .left img { margin-left:8px; }
-#centres-commerciaux #map-canvas-legend-big #map-mercialys-pointer { display:block; height:20px; width:190px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -159px 0; }
-#centres-commerciaux #map-canvas-legend-big span { font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
+#centres-commerciaux #map-canvas-legend-big #map-mercialys-pointer { display:block; height:20px; width:190px; margin:5px auto; background:url('../images/map-legend-pointer.png') no-repeat -156px 0; }
+#centres-commerciaux #map-canvas-legend-big span { display:none; font:600 14px "Open Sans", "Arial"; color:#b60d1c; text-transform:capitalize; }
+#centres-commerciaux #map-canvas-legend-big span#legend-0 { display:block; color:#b60d1c; }
+#centres-commerciaux #map-canvas-legend-big span#legend-1 { color:#b7d00d; }
+#centres-commerciaux #map-canvas-legend-big span#legend-2 { color:#e7c22c; }
+#centres-commerciaux #map-canvas-legend-big span#legend-3 { color:#262219; }
+#centres-commerciaux #map-canvas-legend-big span#legend-4 { color:#5e5238; }
+#centres-commerciaux #map-canvas-legend-big span#legend-5 { color:#575bbb; }
 #centres-commerciaux #actu-filter p { color:#9bb106; font:700 12px "Open Sans", "Arial"; text-transform:uppercase; padding:0px 30px 0px 60px; }
 #centres-commerciaux #actu-filter .select select { display:block; float:left; background: transparent; width: 270px; padding:0px 0 10px 10px; font:500 12px "Open Sans"; border: 0; border-radius: 0; height: 35px; color:#717171; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor:pointer; }
 #centres-commerciaux #actu-filter .select { margin:0 0 0 60px; float:left; width:250px; height: 26px; overflow: hidden; background: url('../images/select-arr.png') no-repeat 100% center #fff; border: 1px solid #e0e0e0; border-radius:15px; border-right:none; }

@@ -1,38 +1,122 @@
 var map;
+var marker;
+var paris = new google.maps.LatLng(48.833, 2.333);
+var france = new google.maps.LatLng(46.85, 1.7254880);
+var markers = [];
+var iterator = 0;
 
-$(function(){
-	showFilter();
+// Activation du rafraichissement visuel
+google.maps.visualRefresh = true;
+
+// Coordonnées des centres
+var marqueurs = [
+	[
+	// Grandes surfaces spécialisées
+	new google.maps.LatLng(48.833, 2.333),
+	new google.maps.LatLng(48.100, -1.667),
+	new google.maps.LatLng(48.067, -0.750),
+	new google.maps.LatLng(47.383, 0.700),
+	new google.maps.LatLng(45.433, 4.383)
+	],
+	[
+	// Centre Local De Proximité
+	new google.maps.LatLng(50.433, 2.833),
+	new google.maps.LatLng(43.700, 7.267),
+	new google.maps.LatLng(48.583, 7.750),
+	new google.maps.LatLng(41.917, 8.717),
+	new google.maps.LatLng(42.683, 9.433)
+	],
+	[
+	// Surface Alimentaire
+	new google.maps.LatLng(48.833, 2.333),
+	new google.maps.LatLng(48.100, -1.667),
+	new google.maps.LatLng(48.067, -0.750),
+	new google.maps.LatLng(47.383, 0.700),
+	new google.maps.LatLng(45.433, 4.383)
+	],
+	[
+	// Grand centre régionnal
+	new google.maps.LatLng(50.433, 2.833),
+	new google.maps.LatLng(43.700, 7.267),
+	new google.maps.LatLng(48.583, 7.750),
+	new google.maps.LatLng(41.917, 8.717),
+	new google.maps.LatLng(42.683, 9.433)
+	],
+	[
+	// Grand centre commercial
+	new google.maps.LatLng(48.833, 2.333),
+	new google.maps.LatLng(48.100, -1.667),
+	new google.maps.LatLng(48.067, -0.750),
+	new google.maps.LatLng(47.383, 0.700),
+	new google.maps.LatLng(45.433, 4.383)
+	],
+	[
+	// Centre détenu en partenariat
+	new google.maps.LatLng(50.433, 2.833),
+	new google.maps.LatLng(43.700, 7.267),
+	new google.maps.LatLng(48.583, 7.750),
+	new google.maps.LatLng(41.917, 8.717),
+	new google.maps.LatLng(42.683, 9.433)
+	],
+];
+
+// A l'execution de la page
+$(function() {
+	$('#mercialysMap area').on('click', function() {
+		clearOverlays();
+		var id = $(this).attr('id').substr(4);
+		var coords = $(this).attr('coords').split(",");
+
+		drop(marqueurs[parseInt(id)], parseInt(coords[0]));
+	});
 });
 
-function showFilter() {
-	var open = false;
-	$('#actu-filtre-button').click(function(e){
-		e.preventDefault();
-
-		if(!open) {
-			$(this).css({'background-position-x': -13});
-			$('#actu-filter').animate({ 'height':290 }, 500, 'easeOutQuint', function(){
-				open = true;
-			});
-		}
-		else {
-			$(this).css({'background-position-x': 80});
-			$('#actu-filter').animate({ 'height':0 }, 500, 'easeOutQuint', function(){
-				open = false;
-			});
-		}
-	});
-}
-
+// Init de la map
 function initialize() {
-  var mapOptions = {
-    zoom: 6,
-    center: new google.maps.LatLng(46.1318590, 3.4254880),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
+	var mapOptions = {
+		zoom: 6,
+		scrollwheel: false,
+    	center: france,
+    	mapTypeId: google.maps.MapTypeId.ROADMAP
+	};
+
+	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 }
+
+// Positionne chaque marqueur
+// ============================================
+function drop(tableau, coords) {
+	
+	for (var i = 0; i < tableau.length; i++) {
+		setTimeout(function() {
+			addMarker(tableau, coords);
+		}, i * 200);
+	}
+}
+
+function addMarker(evenement, coords) {
+	var iconMarker = new google.maps.MarkerImage(
+		'images/map-legend.png',
+    	new google.maps.Size(15,21),
+    	new google.maps.Point(coords,0)
+	);
+
+	markers.push(new google.maps.Marker({
+   		position: evenement[iterator],
+    	map: map,
+    	icon: iconMarker,
+    	animation: google.maps.Animation.DROP
+  	}));
+	iterator++;
+}
+
+function clearOverlays() {
+  for (var i = 0; i < markers.length; i++ ) {
+    markers[i].setMap(null);
+  }
+  markers = [];
+  iterator = 0;
+}
+// ============================================
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
