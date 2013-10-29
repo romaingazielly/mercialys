@@ -11,68 +11,58 @@ google.maps.visualRefresh = true;
 // Coordonnées des centres
 var marqueurs = [
 	[
-	// Grandes surfaces spécialisées
-	new google.maps.LatLng(48.833, 2.333),
-	new google.maps.LatLng(48.100, -1.667),
-	new google.maps.LatLng(48.067, -0.750),
-	new google.maps.LatLng(47.383, 0.700),
-	new google.maps.LatLng(45.433, 4.383)
-	],
-	[
-	// Centre Local De Proximité
-	new google.maps.LatLng(50.433, 2.833),
-	new google.maps.LatLng(43.700, 7.267),
-	new google.maps.LatLng(48.583, 7.750),
-	new google.maps.LatLng(41.917, 8.717),
-	new google.maps.LatLng(42.683, 9.433)
-	],
-	[
-	// Surface Alimentaire
-	new google.maps.LatLng(48.833, 2.333),
-	new google.maps.LatLng(48.100, -1.667),
-	new google.maps.LatLng(48.067, -0.750),
-	new google.maps.LatLng(47.383, 0.700),
-	new google.maps.LatLng(45.433, 4.383)
-	],
-	[
-	// Grand centre régionnal
-	new google.maps.LatLng(50.433, 2.833),
-	new google.maps.LatLng(43.700, 7.267),
-	new google.maps.LatLng(48.583, 7.750),
-	new google.maps.LatLng(41.917, 8.717),
-	new google.maps.LatLng(42.683, 9.433)
-	],
-	[
-	// Grand centre commercial
-	new google.maps.LatLng(48.833, 2.333),
-	new google.maps.LatLng(48.100, -1.667),
-	new google.maps.LatLng(48.067, -0.750),
-	new google.maps.LatLng(47.383, 0.700),
-	new google.maps.LatLng(45.433, 4.383)
-	],
-	[
-	// Centre détenu en partenariat
-	new google.maps.LatLng(50.433, 2.833),
-	new google.maps.LatLng(43.700, 7.267),
-	new google.maps.LatLng(48.583, 7.750),
-	new google.maps.LatLng(41.917, 8.717),
-	new google.maps.LatLng(42.683, 9.433)
+		// Grandes surfaces spécialisées
+		[new google.maps.LatLng(48.833, 2.333), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.100, -1.667), "Super Centre co", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.067, -0.750), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(47.383, 0.700), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(45.433, 4.383), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"]
+		],
+		[
+		// Centre Local De Proximité
+		[new google.maps.LatLng(47.833, 2.333), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.100, -1.667), "Super Centre com", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.067, -0.750), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(47.383, 0.700), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(45.433, 4.383), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"]
+		],
+		[
+		// Surface Alimentaire
+		[new google.maps.LatLng(48.833, 2.333), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.100, -1.667), "Super Centre commercial", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.067, -0.750), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(47.383, 0.700), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(45.433, 4.383), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"]
+		],
+		[
+		// Grand centre régionnal
+		[new google.maps.LatLng(48.833, 2.333), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.100, -1.667), "Carré Sud", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.067, -0.750), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(47.383, 0.700), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(45.433, 4.383), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"]
+		],
+		[
+		// Grand centre commercial
+		[new google.maps.LatLng(48.833, 2.333), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.100, -1.667), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.067, -0.750), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(47.383, 0.700), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(45.433, 4.383), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"]
+		],
+		[
+		// Centre détenu en partenariat
+		[new google.maps.LatLng(48.833, 2.333), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.100, -1.667), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(48.067, -0.750), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(47.383, 0.700), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"],
+		[new google.maps.LatLng(45.433, 4.383), "C. Cial Géant Les Villages", "(Saint-Brieux - 22)", "http://www.adresse-du-centre.com"]
 	],
 ];
 
-// A l'execution de la page
-$(function() {
-	$('#mercialysMap area').on('click', function() {
-		clearOverlays();
-		var id = $(this).attr('id').substr(4);
-		var coords = $(this).attr('coords').split(",");
-
-		drop(marqueurs[parseInt(id)], parseInt(coords[0]));
-	});
-});
-
 // Init de la map
 function initialize() {
+
 	var mapOptions = {
 		zoom: 6,
 		scrollwheel: false,
@@ -81,32 +71,58 @@ function initialize() {
 	};
 
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+	$('#mercialysMap area').on('click', function() {
+		clearOverlays();
+		var id = parseInt($(this).attr('id').substr(4));
+		var coords = $(this).attr('coords').split(",");
+		drop(marqueurs[id], coords[0]);
+	});
 }
 
 // Positionne chaque marqueur
 // ============================================
-function drop(tableau, coords) {
-	
-	for (var i = 0; i < tableau.length; i++) {
+function drop(id, coord) {
+	for (var i = 0; i < id.length; i++) {
 		setTimeout(function() {
-			addMarker(tableau, coords);
+			addMarker(id, coord);
 		}, i * 200);
 	}
 }
 
-function addMarker(evenement, coords) {
+function addMarker(id, coord) {
 	var iconMarker = new google.maps.MarkerImage(
 		'images/map-legend.png',
     	new google.maps.Size(15,21),
-    	new google.maps.Point(coords,0)
+    	new google.maps.Point(coord,0)
 	);
 
 	markers.push(new google.maps.Marker({
-   		position: evenement[iterator],
+   		position: id[iterator][0],
     	map: map,
     	icon: iconMarker,
     	animation: google.maps.Animation.DROP
   	}));
+
+  	var contentInfoWindow = '<div class="info-window"><h1>'+id[iterator][1]+'</h1>'+'<p>'+id[iterator][2]+'</p><p><a href='+id[iterator][3]+'>Voir la fiche du centre</a></p></div>';
+
+  	markers.infowindow = new google.maps.InfoWindow({
+      content: contentInfoWindow
+	});
+
+	var fuck = new google.maps.Marker({
+      position: id[iterator][0],
+      map: map,
+      icon: iconMarker
+	});
+
+
+  	google.maps.event.addListener(markers[iterator], 'click', function(){
+      // affichage position du marker
+      markers.infowindow.close();
+      markers.infowindow.open(map,fuck);
+    });
+
 	iterator++;
 }
 
@@ -118,5 +134,4 @@ function clearOverlays() {
   iterator = 0;
 }
 // ============================================
-
 google.maps.event.addDomListener(window, 'load', initialize);
